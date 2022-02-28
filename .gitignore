@@ -2,3 +2,7 @@
 dissassembler/output.csv
 dissassembler/temp_output.txt
 disassembler/output.csv
+disassembler/temp_output.txt
+Implementation/output.csv
+Implementation/temp_output.txt
+Implementation/__pycache__/disassembler.cpython-39.pyc
