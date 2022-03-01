@@ -67,5 +67,3 @@ disassembler.disassemble_files("benign_test_data")
 df = pd.read_csv('output.csv', sep=',')
 print(df)
 """
-
-disassemble_files("BenignTestData")
