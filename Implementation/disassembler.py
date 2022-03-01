@@ -37,7 +37,7 @@ def disassemble(target_file, dumpbin_path, dumpbin_command, input_folder_name):
                     stdin=PIPE, stdout=output_file, stderr=PIPE )                             
     process.communicate(commands)
     output_file.close()
-    output_file = open("temp_output.txt", 'r')
+    output_file = open("temp_output.txt", 'r', encoding='utf-8', errors='ignore')
     dissassembled_file = output_file.read()
     output_file.close()
     return parse_disasembled_file(dissassembled_file)
@@ -67,3 +67,5 @@ disassembler.disassemble_files("benign_test_data")
 df = pd.read_csv('output.csv', sep=',')
 print(df)
 """
+
+disassemble_files("BenignTestData")
