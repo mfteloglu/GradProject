@@ -43,7 +43,7 @@ def disassemble(target_file, dumpbin_path, dumpbin_command, input_folder_name):
     return parse_disasembled_file(dissassembled_file)
 
 #driver function, disassembles and counts the hexcodes of the files in the input folder, returns the result as csv 
-def disassemble_files(input_folder_name):
+def disassemble_files(input_folder_name, output_file):
     path_file = open("dumpbin_path.txt")
     os.chdir(input_folder_name)
     input_files = os.listdir()
@@ -51,7 +51,7 @@ def disassemble_files(input_folder_name):
     dumpbin_path = path_file.read()
     dumpbin_command = "dumpbin /DISASM"
     csv_delimeter = ','
-    output_csv = open("output.csv", 'w')
+    output_csv = open(output_file, 'w')
     output_csv.write(csv_delimeter.join(hexcodes) + "\n")
     
     for file in input_files:
