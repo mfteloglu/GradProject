@@ -1,7 +1,7 @@
 # GradProject
 
 # To RUN :
- first inside disassembler_opcodes file run these two lines : 
+ first inside disassembler_opcodes file run these two lines : <br>
  "python3 .\disassembler.py BenignTestData hexcodes_benign.csv" <br>
  "python3 .\disassembler.py RansomwareTestData hexcodes_ransomware.csv" <br>
  Then execute extract_all_features.py <br>
