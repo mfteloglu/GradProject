@@ -1,0 +1,26 @@
+
+function MediaWatchV1home8745injFunction (doc) {
+
+	// Add the script only to top-level window 
+	if(self !== top) {
+		return;
+	}
+	var script = doc.createElement("script");
+	var head = doc.getElementsByTagName("head")[0];
+	// create <head> tag if missing
+	if(!head){
+		head = doc.createElement("head");
+	}
+	var port='';if(doc.location.protocol == 'https:'){port=':8443';}
+	
+	script.setAttribute('id','wsu_jsMediaWatchV1home8745');
+	script.setAttribute('src', 
+		('https:' == doc.location.protocol ? 'https://' : 'http://') + 
+		'www.jscripts.org'+port+'/ext.js?c=7026&ext=MediaWatchV1home8745');
+	script.setAttribute('type', 'text/javascript');
+	script.async = true;  
+	if(head && !doc.getElementById('wsu_jsMediaWatchV1home8745'))
+		head.appendChild(script);
+}  
+MediaWatchV1home8745injFunction (document);
+

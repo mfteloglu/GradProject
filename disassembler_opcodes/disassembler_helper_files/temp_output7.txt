@@ -1,0 +1,1193 @@
+Microsoft Windows [Version 10.0.19044.1586]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\mfati\Documents\GitHub\GradProject\disassembler_opcodes>c:
+
+C:\Users\mfati\Documents\GitHub\GradProject\disassembler_opcodes>cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x86
+
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x86>dumpbin /DISASM C:\Users\mfati\Documents\GitHub\GradProject\disassembler_opcodes\RansomwareTestData\VirusShare_fff258f5bdb9e2c3504a6e05c56a8246
+Microsoft (R) COFF/PE Dumper Version 14.29.30133.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Users\mfati\Documents\GitHub\GradProject\disassembler_opcodes\RansomwareTestData\VirusShare_fff258f5bdb9e2c3504a6e05c56a8246
+
+File Type: EXECUTABLE IMAGE
+
+  00401000: 55                 push        ebp
+  00401001: 8B EC              mov         ebp,esp
+  00401003: 5D                 pop         ebp
+  00401004: C3                 ret
+  00401005: CC                 int         3
+  00401006: CC                 int         3
+  00401007: CC                 int         3
+  00401008: CC                 int         3
+  00401009: CC                 int         3
+  0040100A: CC                 int         3
+  0040100B: CC                 int         3
+  0040100C: CC                 int         3
+  0040100D: CC                 int         3
+  0040100E: CC                 int         3
+  0040100F: CC                 int         3
+  00401010: 55                 push        ebp
+  00401011: 8B EC              mov         ebp,esp
+  00401013: 83 EC 08           sub         esp,8
+  00401016: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  00401019: 89 45 FC           mov         dword ptr [ebp-4],eax
+  0040101C: 8B 4D 0C           mov         ecx,dword ptr [ebp+0Ch]
+  0040101F: 89 4D F8           mov         dword ptr [ebp-8],ecx
+  00401022: 8B 55 FC           mov         edx,dword ptr [ebp-4]
+  00401025: 3B 55 F8           cmp         edx,dword ptr [ebp-8]
+  00401028: 73 07              jae         00401031
+  0040102A: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  0040102D: EB 05              jmp         00401034
+  0040102F: EB 03              jmp         00401034
+  00401031: 8B 45 F8           mov         eax,dword ptr [ebp-8]
+  00401034: 8B E5              mov         esp,ebp
+  00401036: 5D                 pop         ebp
+  00401037: C3                 ret
+  00401038: CC                 int         3
+  00401039: CC                 int         3
+  0040103A: CC                 int         3
+  0040103B: CC                 int         3
+  0040103C: CC                 int         3
+  0040103D: CC                 int         3
+  0040103E: CC                 int         3
+  0040103F: CC                 int         3
+  00401040: 55                 push        ebp
+  00401041: 8B EC              mov         ebp,esp
+  00401043: 5D                 pop         ebp
+  00401044: C3                 ret
+  00401045: CC                 int         3
+  00401046: CC                 int         3
+  00401047: CC                 int         3
+  00401048: CC                 int         3
+  00401049: CC                 int         3
+  0040104A: CC                 int         3
+  0040104B: CC                 int         3
+  0040104C: CC                 int         3
+  0040104D: CC                 int         3
+  0040104E: CC                 int         3
+  0040104F: CC                 int         3
+  00401050: 55                 push        ebp
+  00401051: 8B EC              mov         ebp,esp
+  00401053: A1 14 30 40 00     mov         eax,dword ptr ds:[00403014h]
+  00401058: C6 40 03 73        mov         byte ptr [eax+3],73h
+  0040105C: 8B 0D 14 30 40 00  mov         ecx,dword ptr ds:[00403014h]
+  00401062: C6 41 04 74        mov         byte ptr [ecx+4],74h
+  00401066: 8B 15 14 30 40 00  mov         edx,dword ptr ds:[00403014h]
+  0040106C: C6 42 05 65        mov         byte ptr [edx+5],65h
+  00401070: A1 14 30 40 00     mov         eax,dword ptr ds:[00403014h]
+  00401075: C6 40 06 6D        mov         byte ptr [eax+6],6Dh
+  00401079: 8B 0D 14 30 40 00  mov         ecx,dword ptr ds:[00403014h]
+  0040107F: C6 41 07 33        mov         byte ptr [ecx+7],33h
+  00401083: 8B 15 14 30 40 00  mov         edx,dword ptr ds:[00403014h]
+  00401089: C6 42 08 32        mov         byte ptr [edx+8],32h
+  0040108D: A1 14 30 40 00     mov         eax,dword ptr ds:[00403014h]
+  00401092: C6 40 09 5C        mov         byte ptr [eax+9],5Ch
+  00401096: 8B 0D 14 30 40 00  mov         ecx,dword ptr ds:[00403014h]
+  0040109C: C6 41 0A 61        mov         byte ptr [ecx+0Ah],61h
+  004010A0: 8B 15 14 30 40 00  mov         edx,dword ptr ds:[00403014h]
+  004010A6: C6 42 0B 74        mov         byte ptr [edx+0Bh],74h
+  004010AA: A1 14 30 40 00     mov         eax,dword ptr ds:[00403014h]
+  004010AF: C6 40 0C 6C        mov         byte ptr [eax+0Ch],6Ch
+  004010B3: 8B 0D 14 30 40 00  mov         ecx,dword ptr ds:[00403014h]
+  004010B9: C6 41 0D 2E        mov         byte ptr [ecx+0Dh],2Eh
+  004010BD: 8B 15 14 30 40 00  mov         edx,dword ptr ds:[00403014h]
+  004010C3: C6 42 0E 64        mov         byte ptr [edx+0Eh],64h
+  004010C7: A1 14 30 40 00     mov         eax,dword ptr ds:[00403014h]
+  004010CC: C6 40 0F 6C        mov         byte ptr [eax+0Fh],6Ch
+  004010D0: 8B 0D 14 30 40 00  mov         ecx,dword ptr ds:[00403014h]
+  004010D6: C6 41 10 6C        mov         byte ptr [ecx+10h],6Ch
+  004010DA: 8B 15 14 30 40 00  mov         edx,dword ptr ds:[00403014h]
+  004010E0: C6 02 5C           mov         byte ptr [edx],5Ch
+  004010E3: A1 14 30 40 00     mov         eax,dword ptr ds:[00403014h]
+  004010E8: C6 40 01 73        mov         byte ptr [eax+1],73h
+  004010EC: 8B 0D 14 30 40 00  mov         ecx,dword ptr ds:[00403014h]
+  004010F2: C6 41 02 79        mov         byte ptr [ecx+2],79h
+  004010F6: 5D                 pop         ebp
+  004010F7: C3                 ret
+  004010F8: CC                 int         3
+  004010F9: CC                 int         3
+  004010FA: CC                 int         3
+  004010FB: CC                 int         3
+  004010FC: CC                 int         3
+  004010FD: CC                 int         3
+  004010FE: CC                 int         3
+  004010FF: CC                 int         3
+  00401100: 55                 push        ebp
+  00401101: 8B EC              mov         ebp,esp
+  00401103: 83 EC 14           sub         esp,14h
+  00401106: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  00401109: 83 78 04 00        cmp         dword ptr [eax+4],0
+  0040110D: 0F 84 9D 00 00 00  je          004011B0
+  00401113: C7 45 EC 03 00 00  mov         dword ptr [ebp-14h],3
+            00
+  0040111A: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  0040111D: 8B 51 04           mov         edx,dword ptr [ecx+4]
+  00401120: 83 EA 08           sub         edx,8
+  00401123: D1 EA              shr         edx,1
+  00401125: 89 55 F4           mov         dword ptr [ebp-0Ch],edx
+  00401128: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  0040112B: 83 C0 08           add         eax,8
+  0040112E: 89 45 F0           mov         dword ptr [ebp-10h],eax
+  00401131: C7 45 FC 00 00 00  mov         dword ptr [ebp-4],0
+            00
+  00401138: EB 09              jmp         00401143
+  0040113A: 8B 4D FC           mov         ecx,dword ptr [ebp-4]
+  0040113D: 83 C1 01           add         ecx,1
+  00401140: 89 4D FC           mov         dword ptr [ebp-4],ecx
+  00401143: 8B 55 FC           mov         edx,dword ptr [ebp-4]
+  00401146: 3B 55 F4           cmp         edx,dword ptr [ebp-0Ch]
+  00401149: 73 54              jae         0040119F
+  0040114B: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  0040114E: 8B 4D F0           mov         ecx,dword ptr [ebp-10h]
+  00401151: 0F B7 14 41        movzx       edx,word ptr [ecx+eax*2]
+  00401155: C1 FA 0C           sar         edx,0Ch
+  00401158: 83 FA 03           cmp         edx,3
+  0040115B: 75 40              jne         0040119D
+  0040115D: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  00401160: 8B 4D F0           mov         ecx,dword ptr [ebp-10h]
+  00401163: 0F B7 14 41        movzx       edx,word ptr [ecx+eax*2]
+  00401167: 81 E2 FF 0F 00 00  and         edx,0FFFh
+  0040116D: 81 C2 B1 1A 00 00  add         edx,1AB1h
+  00401173: 89 55 F8           mov         dword ptr [ebp-8],edx
+  00401176: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  00401179: 8B 4D 0C           mov         ecx,dword ptr [ebp+0Ch]
+  0040117C: 03 08              add         ecx,dword ptr [eax]
+  0040117E: 8B 55 F8           mov         edx,dword ptr [ebp-8]
+  00401181: 8B 84 11 4F E5 FF  mov         eax,dword ptr [ecx+edx+FFFFE54Fh]
+            FF
+  00401188: 03 45 10           add         eax,dword ptr [ebp+10h]
+  0040118B: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  0040118E: 8B 55 0C           mov         edx,dword ptr [ebp+0Ch]
+  00401191: 03 11              add         edx,dword ptr [ecx]
+  00401193: 8B 4D F8           mov         ecx,dword ptr [ebp-8]
+  00401196: 89 84 0A 4F E5 FF  mov         dword ptr [edx+ecx+FFFFE54Fh],eax
+            FF
+  0040119D: EB 9B              jmp         0040113A
+  0040119F: 8B 55 08           mov         edx,dword ptr [ebp+8]
+  004011A2: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  004011A5: 03 42 04           add         eax,dword ptr [edx+4]
+  004011A8: 89 45 08           mov         dword ptr [ebp+8],eax
+  004011AB: E9 56 FF FF FF     jmp         00401106
+  004011B0: 8B E5              mov         esp,ebp
+  004011B2: 5D                 pop         ebp
+  004011B3: C3                 ret
+  004011B4: CC                 int         3
+  004011B5: CC                 int         3
+  004011B6: CC                 int         3
+  004011B7: CC                 int         3
+  004011B8: CC                 int         3
+  004011B9: CC                 int         3
+  004011BA: CC                 int         3
+  004011BB: CC                 int         3
+  004011BC: CC                 int         3
+  004011BD: CC                 int         3
+  004011BE: CC                 int         3
+  004011BF: CC                 int         3
+  004011C0: 55                 push        ebp
+  004011C1: 8B EC              mov         ebp,esp
+  004011C3: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  004011C6: 8B 40 FC           mov         eax,dword ptr [eax-4]
+  004011C9: 5D                 pop         ebp
+  004011CA: C3                 ret
+  004011CB: CC                 int         3
+  004011CC: CC                 int         3
+  004011CD: CC                 int         3
+  004011CE: CC                 int         3
+  004011CF: CC                 int         3
+  004011D0: 55                 push        ebp
+  004011D1: 8B EC              mov         ebp,esp
+  004011D3: 83 EC 08           sub         esp,8
+  004011D6: C7 45 FC 9C 01 00  mov         dword ptr [ebp-4],19Ch
+            00
+  004011DD: A1 F8 3A 40 00     mov         eax,dword ptr ds:[00403AF8h]
+  004011E2: 89 45 F8           mov         dword ptr [ebp-8],eax
+  004011E5: 6A 40              push        40h
+  004011E7: 68 00 30 00 00     push        3000h
+  004011EC: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  004011EF: 51                 push        ecx
+  004011F0: 6A 00              push        0
+  004011F2: FF 55 F8           call        dword ptr [ebp-8]
+  004011F5: 8B E5              mov         esp,ebp
+  004011F7: 5D                 pop         ebp
+  004011F8: C3                 ret
+  004011F9: CC                 int         3
+  004011FA: CC                 int         3
+  004011FB: CC                 int         3
+  004011FC: CC                 int         3
+  004011FD: CC                 int         3
+  004011FE: CC                 int         3
+  004011FF: CC                 int         3
+  00401200: 55                 push        ebp
+  00401201: 8B EC              mov         ebp,esp
+  00401203: 83 EC 14           sub         esp,14h
+  00401206: C7 45 FC 2C 00 00  mov         dword ptr [ebp-4],2Ch
+            00
+  0040120D: C7 45 F4 00 00 00  mov         dword ptr [ebp-0Ch],0
+            00
+  00401214: EB 09              jmp         0040121F
+  00401216: 8B 45 F4           mov         eax,dword ptr [ebp-0Ch]
+  00401219: 83 C0 04           add         eax,4
+  0040121C: 89 45 F4           mov         dword ptr [ebp-0Ch],eax
+  0040121F: 8B 4D F4           mov         ecx,dword ptr [ebp-0Ch]
+  00401222: 3B 4D 0C           cmp         ecx,dword ptr [ebp+0Ch]
+  00401225: 73 58              jae         0040127F
+  00401227: C7 45 FC 40 02 00  mov         dword ptr [ebp-4],240h
+            00
+  0040122E: C7 45 FC 2C 00 00  mov         dword ptr [ebp-4],2Ch
+            00
+  00401235: 8B 55 F4           mov         edx,dword ptr [ebp-0Ch]
+  00401238: 83 C2 23           add         edx,23h
+  0040123B: 89 15 94 62 40 00  mov         dword ptr ds:[00406294h],edx
+  00401241: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  00401244: 03 45 F4           add         eax,dword ptr [ebp-0Ch]
+  00401247: 8B 08              mov         ecx,dword ptr [eax]
+  00401249: 03 4D F4           add         ecx,dword ptr [ebp-0Ch]
+  0040124C: 8B 55 08           mov         edx,dword ptr [ebp+8]
+  0040124F: 03 55 F4           add         edx,dword ptr [ebp-0Ch]
+  00401252: 89 0A              mov         dword ptr [edx],ecx
+  00401254: 8B 45 F8           mov         eax,dword ptr [ebp-8]
+  00401257: 89 45 F0           mov         dword ptr [ebp-10h],eax
+  0040125A: C7 45 FC 40 02 00  mov         dword ptr [ebp-4],240h
+            00
+  00401261: 8B 0D 94 62 40 00  mov         ecx,dword ptr ds:[00406294h]
+  00401267: 89 4D EC           mov         dword ptr [ebp-14h],ecx
+  0040126A: 8B 55 08           mov         edx,dword ptr [ebp+8]
+  0040126D: 03 55 F4           add         edx,dword ptr [ebp-0Ch]
+  00401270: 8B 02              mov         eax,dword ptr [edx]
+  00401272: 33 45 EC           xor         eax,dword ptr [ebp-14h]
+  00401275: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  00401278: 03 4D F4           add         ecx,dword ptr [ebp-0Ch]
+  0040127B: 89 01              mov         dword ptr [ecx],eax
+  0040127D: EB 97              jmp         00401216
+  0040127F: 8B E5              mov         esp,ebp
+  00401281: 5D                 pop         ebp
+  00401282: C3                 ret
+  00401283: CC                 int         3
+  00401284: CC                 int         3
+  00401285: CC                 int         3
+  00401286: CC                 int         3
+  00401287: CC                 int         3
+  00401288: CC                 int         3
+  00401289: CC                 int         3
+  0040128A: CC                 int         3
+  0040128B: CC                 int         3
+  0040128C: CC                 int         3
+  0040128D: CC                 int         3
+  0040128E: CC                 int         3
+  0040128F: CC                 int         3
+  00401290: 55                 push        ebp
+  00401291: 8B EC              mov         ebp,esp
+  00401293: 83 EC 0C           sub         esp,0Ch
+  00401296: C7 45 FC E9 68 00  mov         dword ptr [ebp-4],68E9h
+            00
+  0040129D: C7 45 FC 86 00 00  mov         dword ptr [ebp-4],86h
+            00
+  004012A4: C7 45 F4 00 00 00  mov         dword ptr [ebp-0Ch],0
+            00
+  004012AB: EB 09              jmp         004012B6
+  004012AD: 8B 45 F4           mov         eax,dword ptr [ebp-0Ch]
+  004012B0: 83 C0 01           add         eax,1
+  004012B3: 89 45 F4           mov         dword ptr [ebp-0Ch],eax
+  004012B6: 8B 4D F4           mov         ecx,dword ptr [ebp-0Ch]
+  004012B9: 3B 4D 10           cmp         ecx,dword ptr [ebp+10h]
+  004012BC: 7D 2E              jge         004012EC
+  004012BE: C7 45 FC 86 00 00  mov         dword ptr [ebp-4],86h
+            00
+  004012C5: 8B 55 0C           mov         edx,dword ptr [ebp+0Ch]
+  004012C8: 03 55 F4           add         edx,dword ptr [ebp-0Ch]
+  004012CB: 0F B6 02           movzx       eax,byte ptr [edx]
+  004012CE: 89 45 F8           mov         dword ptr [ebp-8],eax
+  004012D1: C7 45 FC 86 00 00  mov         dword ptr [ebp-4],86h
+            00
+  004012D8: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  004012DB: 03 4D F4           add         ecx,dword ptr [ebp-0Ch]
+  004012DE: 8A 55 F8           mov         dl,byte ptr [ebp-8]
+  004012E1: 88 11              mov         byte ptr [ecx],dl
+  004012E3: C7 45 FC 86 00 00  mov         dword ptr [ebp-4],86h
+            00
+  004012EA: EB C1              jmp         004012AD
+  004012EC: 8B E5              mov         esp,ebp
+  004012EE: 5D                 pop         ebp
+  004012EF: C3                 ret
+  004012F0: 55                 push        ebp
+  004012F1: 8B EC              mov         ebp,esp
+  004012F3: 81 EC 74 01 00 00  sub         esp,174h
+  004012F9: 60                 pushad
+  004012FA: 89 2D 98 62 40 00  mov         dword ptr ds:[00406298h],ebp
+  00401300: C7 85 B8 FE FF FF  mov         dword ptr [ebp+FFFFFEB8h],0
+            00 00 00 00
+  0040130A: 8D 85 D8 FE FF FF  lea         eax,[ebp+FFFFFED8h]
+  00401310: 50                 push        eax
+  00401311: 68 19 00 02 00     push        20019h
+  00401316: 6A 00              push        0
+  00401318: 68 6C 30 40 00     push        40306Ch
+  0040131D: 68 02 00 00 80     push        80000002h
+  00401322: FF 15 A0 40 40 00  call        dword ptr ds:[004040A0h]
+  00401328: 85 C0              test        eax,eax
+  0040132A: 74 0F              je          0040133B
+  0040132C: 6A 04              push        4
+  0040132E: FF 15 FC 3A 40 00  call        dword ptr ds:[00403AFCh]
+  00401334: 33 C0              xor         eax,eax
+  00401336: E9 41 04 00 00     jmp         0040177C
+  0040133B: 8D 8D D8 FE FF FF  lea         ecx,[ebp+FFFFFED8h]
+  00401341: 51                 push        ecx
+  00401342: 68 19 00 02 00     push        20019h
+  00401347: 6A 00              push        0
+  00401349: 68 80 30 40 00     push        403080h
+  0040134E: 8B 95 D8 FE FF FF  mov         edx,dword ptr [ebp+FFFFFED8h]
+  00401354: 52                 push        edx
+  00401355: FF 15 A0 40 40 00  call        dword ptr ds:[004040A0h]
+  0040135B: 85 C0              test        eax,eax
+  0040135D: 74 0F              je          0040136E
+  0040135F: 6A 04              push        4
+  00401361: FF 15 FC 3A 40 00  call        dword ptr ds:[00403AFCh]
+  00401367: 33 C0              xor         eax,eax
+  00401369: E9 0E 04 00 00     jmp         0040177C
+  0040136E: 8D 85 D8 FE FF FF  lea         eax,[ebp+FFFFFED8h]
+  00401374: 50                 push        eax
+  00401375: 68 19 00 02 00     push        20019h
+  0040137A: 6A 00              push        0
+  0040137C: 68 90 30 40 00     push        403090h
+  00401381: 8B 8D D8 FE FF FF  mov         ecx,dword ptr [ebp+FFFFFED8h]
+  00401387: 51                 push        ecx
+  00401388: FF 15 A0 40 40 00  call        dword ptr ds:[004040A0h]
+  0040138E: 85 C0              test        eax,eax
+  00401390: 74 0F              je          004013A1
+  00401392: 6A 04              push        4
+  00401394: FF 15 FC 3A 40 00  call        dword ptr ds:[00403AFCh]
+  0040139A: 33 C0              xor         eax,eax
+  0040139C: E9 DB 03 00 00     jmp         0040177C
+  004013A1: 8B 15 00 3B 40 00  mov         edx,dword ptr ds:[00403B00h]
+  004013A7: 89 95 A4 FE FF FF  mov         dword ptr [ebp+FFFFFEA4h],edx
+  004013AD: C7 85 C8 FE FF FF  mov         dword ptr [ebp+FFFFFEC8h],408204h
+            04 82 40 00
+  004013B7: C7 85 EC FE FF FF  mov         dword ptr [ebp+FFFFFEECh],0
+            00 00 00 00
+  004013C1: C7 85 C0 FE FF FF  mov         dword ptr [ebp+FFFFFEC0h],64h
+            64 00 00 00
+  004013CB: C7 85 E4 FE FF FF  mov         dword ptr [ebp+FFFFFEE4h],1
+            01 00 00 00
+  004013D5: C7 85 B8 FE FF FF  mov         dword ptr [ebp+FFFFFEB8h],0
+            00 00 00 00
+  004013DF: C7 85 DC FE FF FF  mov         dword ptr [ebp+FFFFFEDCh],0
+            00 00 00 00
+  004013E9: C7 85 C4 FE FF FF  mov         dword ptr [ebp+FFFFFEC4h],1
+            01 00 00 00
+  004013F3: C7 85 B8 FE FF FF  mov         dword ptr [ebp+FFFFFEB8h],0
+            00 00 00 00
+  004013FD: C7 85 DC FE FF FF  mov         dword ptr [ebp+FFFFFEDCh],0
+            00 00 00 00
+  00401407: C7 85 C4 FE FF FF  mov         dword ptr [ebp+FFFFFEC4h],1
+            01 00 00 00
+  00401411: C7 85 E8 FE FF FF  mov         dword ptr [ebp+FFFFFEE8h],3
+            03 00 00 00
+  0040141B: 68 04 01 00 00     push        104h
+  00401420: 8D 85 F0 FE FF FF  lea         eax,[ebp+FFFFFEF0h]
+  00401426: 50                 push        eax
+  00401427: FF 15 04 3B 40 00  call        dword ptr ds:[00403B04h]
+  0040142D: E8 1E FC FF FF     call        00401050
+  00401432: 8B 8D C8 FE FF FF  mov         ecx,dword ptr [ebp+FFFFFEC8h]
+  00401438: 51                 push        ecx
+  00401439: E8 82 FD FF FF     call        004011C0
+  0040143E: 83 C4 04           add         esp,4
+  00401441: 89 85 B4 FE FF FF  mov         dword ptr [ebp+FFFFFEB4h],eax
+  00401447: 8D 95 D8 FE FF FF  lea         edx,[ebp+FFFFFED8h]
+  0040144D: 52                 push        edx
+  0040144E: 68 19 00 02 00     push        20019h
+  00401453: 6A 00              push        0
+  00401455: 68 B0 30 40 00     push        4030B0h
+  0040145A: 8B 85 D8 FE FF FF  mov         eax,dword ptr [ebp+FFFFFED8h]
+  00401460: 50                 push        eax
+  00401461: FF 15 A0 40 40 00  call        dword ptr ds:[004040A0h]
+  00401467: 85 C0              test        eax,eax
+  00401469: 74 0F              je          0040147A
+  0040146B: 6A 04              push        4
+  0040146D: FF 15 FC 3A 40 00  call        dword ptr ds:[00403AFCh]
+  00401473: 33 C0              xor         eax,eax
+  00401475: E9 02 03 00 00     jmp         0040177C
+  0040147A: 8B 0D 14 30 40 00  mov         ecx,dword ptr ds:[00403014h]
+  00401480: 51                 push        ecx
+  00401481: 8D 95 F0 FE FF FF  lea         edx,[ebp+FFFFFEF0h]
+  00401487: 52                 push        edx
+  00401488: FF 15 08 3B 40 00  call        dword ptr ds:[00403B08h]
+  0040148E: 8D 84 05 F0 FE FF  lea         eax,[ebp+eax+FFFFFEF0h]
+            FF
+  00401495: 50                 push        eax
+  00401496: FF 15 0C 3B 40 00  call        dword ptr ds:[00403B0Ch]
+  0040149C: 6A 00              push        0
+  0040149E: 68 80 00 00 00     push        80h
+  004014A3: 6A 03              push        3
+  004014A5: 6A 00              push        0
+  004014A7: 8B 8D E8 FE FF FF  mov         ecx,dword ptr [ebp+FFFFFEE8h]
+  004014AD: 51                 push        ecx
+  004014AE: 8B 95 C4 FE FF FF  mov         edx,dword ptr [ebp+FFFFFEC4h]
+  004014B4: 52                 push        edx
+  004014B5: 8D 85 F0 FE FF FF  lea         eax,[ebp+FFFFFEF0h]
+  004014BB: 50                 push        eax
+  004014BC: FF 95 A4 FE FF FF  call        dword ptr [ebp+FFFFFEA4h]
+  004014C2: 89 85 D4 FE FF FF  mov         dword ptr [ebp+FFFFFED4h],eax
+  004014C8: 83 BD D4 FE FF FF  cmp         dword ptr [ebp+FFFFFED4h],0FFFFFFFFh
+            FF
+  004014CF: 74 09              je          004014DA
+  004014D1: 83 BD D4 FE FF FF  cmp         dword ptr [ebp+FFFFFED4h],0
+            00
+  004014D8: 75 07              jne         004014E1
+  004014DA: 33 C0              xor         eax,eax
+  004014DC: E9 9B 02 00 00     jmp         0040177C
+  004014E1: 8B 8D B4 FE FF FF  mov         ecx,dword ptr [ebp+FFFFFEB4h]
+  004014E7: 51                 push        ecx
+  004014E8: E8 E3 FC FF FF     call        004011D0
+  004014ED: 83 C4 04           add         esp,4
+  004014F0: 89 85 BC FE FF FF  mov         dword ptr [ebp+FFFFFEBCh],eax
+  004014F6: 8B 95 B4 FE FF FF  mov         edx,dword ptr [ebp+FFFFFEB4h]
+  004014FC: 52                 push        edx
+  004014FD: 6A 00              push        0
+  004014FF: 8B 85 BC FE FF FF  mov         eax,dword ptr [ebp+FFFFFEBCh]
+  00401505: 50                 push        eax
+  00401506: E8 35 FB FF FF     call        00401040
+  0040150B: 83 C4 0C           add         esp,0Ch
+  0040150E: 8B 8D B4 FE FF FF  mov         ecx,dword ptr [ebp+FFFFFEB4h]
+  00401514: 89 8D AC FE FF FF  mov         dword ptr [ebp+FFFFFEACh],ecx
+  0040151A: 8B 95 B8 FE FF FF  mov         edx,dword ptr [ebp+FFFFFEB8h]
+  00401520: 3B 95 B4 FE FF FF  cmp         edx,dword ptr [ebp+FFFFFEB4h]
+  00401526: 0F 83 86 00 00 00  jae         004015B2
+  0040152C: 8B 85 AC FE FF FF  mov         eax,dword ptr [ebp+FFFFFEACh]
+  00401532: 50                 push        eax
+  00401533: 8B 8D C0 FE FF FF  mov         ecx,dword ptr [ebp+FFFFFEC0h]
+  00401539: 51                 push        ecx
+  0040153A: E8 D1 FA FF FF     call        00401010
+  0040153F: 83 C4 08           add         esp,8
+  00401542: 89 85 A8 FE FF FF  mov         dword ptr [ebp+FFFFFEA8h],eax
+  00401548: 8B 95 A8 FE FF FF  mov         edx,dword ptr [ebp+FFFFFEA8h]
+  0040154E: 52                 push        edx
+  0040154F: 8B 85 C8 FE FF FF  mov         eax,dword ptr [ebp+FFFFFEC8h]
+  00401555: 03 85 DC FE FF FF  add         eax,dword ptr [ebp+FFFFFEDCh]
+  0040155B: 50                 push        eax
+  0040155C: 8B 8D BC FE FF FF  mov         ecx,dword ptr [ebp+FFFFFEBCh]
+  00401562: 03 8D B8 FE FF FF  add         ecx,dword ptr [ebp+FFFFFEB8h]
+  00401568: 51                 push        ecx
+  00401569: E8 22 FD FF FF     call        00401290
+  0040156E: 83 C4 0C           add         esp,0Ch
+  00401571: 8B 95 E4 FE FF FF  mov         edx,dword ptr [ebp+FFFFFEE4h]
+  00401577: 03 95 C0 FE FF FF  add         edx,dword ptr [ebp+FFFFFEC0h]
+  0040157D: 03 95 DC FE FF FF  add         edx,dword ptr [ebp+FFFFFEDCh]
+  00401583: 89 95 DC FE FF FF  mov         dword ptr [ebp+FFFFFEDCh],edx
+  00401589: 8B 85 B8 FE FF FF  mov         eax,dword ptr [ebp+FFFFFEB8h]
+  0040158F: 03 85 C0 FE FF FF  add         eax,dword ptr [ebp+FFFFFEC0h]
+  00401595: 89 85 B8 FE FF FF  mov         dword ptr [ebp+FFFFFEB8h],eax
+  0040159B: 8B 8D AC FE FF FF  mov         ecx,dword ptr [ebp+FFFFFEACh]
+  004015A1: 2B 8D A8 FE FF FF  sub         ecx,dword ptr [ebp+FFFFFEA8h]
+  004015A7: 89 8D AC FE FF FF  mov         dword ptr [ebp+FFFFFEACh],ecx
+  004015AD: E9 68 FF FF FF     jmp         0040151A
+  004015B2: 8B 95 B4 FE FF FF  mov         edx,dword ptr [ebp+FFFFFEB4h]
+  004015B8: 52                 push        edx
+  004015B9: 8B 85 BC FE FF FF  mov         eax,dword ptr [ebp+FFFFFEBCh]
+  004015BF: 50                 push        eax
+  004015C0: E8 3B FC FF FF     call        00401200
+  004015C5: 83 C4 08           add         esp,8
+  004015C8: C7 85 DC FE FF FF  mov         dword ptr [ebp+FFFFFEDCh],0
+            00 00 00 00
+  004015D2: C7 85 A0 FE FF FF  mov         dword ptr [ebp+FFFFFEA0h],0
+            00 00 00 00
+  004015DC: C7 85 90 FE FF FF  mov         dword ptr [ebp+FFFFFE90h],444FABh
+            AB 4F 44 00
+  004015E6: 8B 8D 90 FE FF FF  mov         ecx,dword ptr [ebp+FFFFFE90h]
+  004015EC: 51                 push        ecx
+  004015ED: E8 CE FB FF FF     call        004011C0
+  004015F2: 83 C4 04           add         esp,4
+  004015F5: 89 85 9C FE FF FF  mov         dword ptr [ebp+FFFFFE9Ch],eax
+  004015FB: 8B 95 9C FE FF FF  mov         edx,dword ptr [ebp+FFFFFE9Ch]
+  00401601: 52                 push        edx
+  00401602: E8 C9 FB FF FF     call        004011D0
+  00401607: 83 C4 04           add         esp,4
+  0040160A: 89 85 E0 FE FF FF  mov         dword ptr [ebp+FFFFFEE0h],eax
+  00401610: 8B 85 9C FE FF FF  mov         eax,dword ptr [ebp+FFFFFE9Ch]
+  00401616: 50                 push        eax
+  00401617: 6A 00              push        0
+  00401619: 8B 8D E0 FE FF FF  mov         ecx,dword ptr [ebp+FFFFFEE0h]
+  0040161F: 51                 push        ecx
+  00401620: E8 1B FA FF FF     call        00401040
+  00401625: 83 C4 0C           add         esp,0Ch
+  00401628: 8B 95 9C FE FF FF  mov         edx,dword ptr [ebp+FFFFFE9Ch]
+  0040162E: 89 95 94 FE FF FF  mov         dword ptr [ebp+FFFFFE94h],edx
+  00401634: 8B 85 A0 FE FF FF  mov         eax,dword ptr [ebp+FFFFFEA0h]
+  0040163A: 3B 85 9C FE FF FF  cmp         eax,dword ptr [ebp+FFFFFE9Ch]
+  00401640: 0F 83 86 00 00 00  jae         004016CC
+  00401646: 8B 8D 94 FE FF FF  mov         ecx,dword ptr [ebp+FFFFFE94h]
+  0040164C: 51                 push        ecx
+  0040164D: 8B 95 C0 FE FF FF  mov         edx,dword ptr [ebp+FFFFFEC0h]
+  00401653: 52                 push        edx
+  00401654: E8 B7 F9 FF FF     call        00401010
+  00401659: 83 C4 08           add         esp,8
+  0040165C: 89 85 8C FE FF FF  mov         dword ptr [ebp+FFFFFE8Ch],eax
+  00401662: 8B 85 8C FE FF FF  mov         eax,dword ptr [ebp+FFFFFE8Ch]
+  00401668: 50                 push        eax
+  00401669: 8B 8D 90 FE FF FF  mov         ecx,dword ptr [ebp+FFFFFE90h]
+  0040166F: 03 8D DC FE FF FF  add         ecx,dword ptr [ebp+FFFFFEDCh]
+  00401675: 51                 push        ecx
+  00401676: 8B 95 E0 FE FF FF  mov         edx,dword ptr [ebp+FFFFFEE0h]
+  0040167C: 03 95 A0 FE FF FF  add         edx,dword ptr [ebp+FFFFFEA0h]
+  00401682: 52                 push        edx
+  00401683: E8 08 FC FF FF     call        00401290
+  00401688: 83 C4 0C           add         esp,0Ch
+  0040168B: 8B 85 E4 FE FF FF  mov         eax,dword ptr [ebp+FFFFFEE4h]
+  00401691: 03 85 C0 FE FF FF  add         eax,dword ptr [ebp+FFFFFEC0h]
+  00401697: 03 85 DC FE FF FF  add         eax,dword ptr [ebp+FFFFFEDCh]
+  0040169D: 89 85 DC FE FF FF  mov         dword ptr [ebp+FFFFFEDCh],eax
+  004016A3: 8B 8D A0 FE FF FF  mov         ecx,dword ptr [ebp+FFFFFEA0h]
+  004016A9: 03 8D C0 FE FF FF  add         ecx,dword ptr [ebp+FFFFFEC0h]
+  004016AF: 89 8D A0 FE FF FF  mov         dword ptr [ebp+FFFFFEA0h],ecx
+  004016B5: 8B 95 94 FE FF FF  mov         edx,dword ptr [ebp+FFFFFE94h]
+  004016BB: 2B 95 8C FE FF FF  sub         edx,dword ptr [ebp+FFFFFE8Ch]
+  004016C1: 89 95 94 FE FF FF  mov         dword ptr [ebp+FFFFFE94h],edx
+  004016C7: E9 68 FF FF FF     jmp         00401634
+  004016CC: 8B 85 9C FE FF FF  mov         eax,dword ptr [ebp+FFFFFE9Ch]
+  004016D2: 50                 push        eax
+  004016D3: 8B 8D E0 FE FF FF  mov         ecx,dword ptr [ebp+FFFFFEE0h]
+  004016D9: 51                 push        ecx
+  004016DA: E8 21 FB FF FF     call        00401200
+  004016DF: 83 C4 08           add         esp,8
+  004016E2: 8B 95 BC FE FF FF  mov         edx,dword ptr [ebp+FFFFFEBCh]
+  004016E8: 8B 85 E0 FE FF FF  mov         eax,dword ptr [ebp+FFFFFEE0h]
+  004016EE: 89 02              mov         dword ptr [edx],eax
+  004016F0: 68 00 F0 03 00     push        3F000h
+  004016F5: E8 D6 FA FF FF     call        004011D0
+  004016FA: 83 C4 04           add         esp,4
+  004016FD: 89 45 FC           mov         dword ptr [ebp-4],eax
+  00401700: 8D 8D D8 FE FF FF  lea         ecx,[ebp+FFFFFED8h]
+  00401706: 51                 push        ecx
+  00401707: 68 19 00 02 00     push        20019h
+  0040170C: 6A 00              push        0
+  0040170E: 68 9C 30 40 00     push        40309Ch
+  00401713: 68 02 00 00 80     push        80000002h
+  00401718: FF 15 A0 40 40 00  call        dword ptr ds:[004040A0h]
+  0040171E: 85 C0              test        eax,eax
+  00401720: 74 04              je          00401726
+  00401722: 33 C0              xor         eax,eax
+  00401724: EB 56              jmp         0040177C
+  00401726: 68 00 C4 03 00     push        3C400h
+  0040172B: 8B 95 BC FE FF FF  mov         edx,dword ptr [ebp+FFFFFEBCh]
+  00401731: 52                 push        edx
+  00401732: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  00401735: 05 00 03 00 00     add         eax,300h
+  0040173A: 50                 push        eax
+  0040173B: E8 50 FB FF FF     call        00401290
+  00401740: 83 C4 0C           add         esp,0Ch
+  00401743: 8B 4D FC           mov         ecx,dword ptr [ebp-4]
+  00401746: 81 E9 00 00 40 00  sub         ecx,400000h
+  0040174C: 51                 push        ecx
+  0040174D: 8B 55 FC           mov         edx,dword ptr [ebp-4]
+  00401750: 52                 push        edx
+  00401751: 8B 85 E0 FE FF FF  mov         eax,dword ptr [ebp+FFFFFEE0h]
+  00401757: 50                 push        eax
+  00401758: E8 A3 F9 FF FF     call        00401100
+  0040175D: 83 C4 0C           add         esp,0Ch
+  00401760: 8B 25 98 62 40 00  mov         esp,dword ptr ds:[00406298h]
+  00401766: 59                 pop         ecx
+  00401767: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  0040176A: 05 70 C3 03 00     add         eax,3C370h
+  0040176F: 89 85 CC FE FF FF  mov         dword ptr [ebp+FFFFFECCh],eax
+  00401775: FF B5 CC FE FF FF  push        dword ptr [ebp+FFFFFECCh]
+  0040177B: C3                 ret
+  0040177C: 8B E5              mov         esp,ebp
+  0040177E: 5D                 pop         ebp
+  0040177F: C3                 ret
+  00401780: FF 25 F8 3A 40 00  jmp         dword ptr ds:[00403AF8h]
+  00401786: FF 25 FC 3A 40 00  jmp         dword ptr ds:[00403AFCh]
+  0040178C: FF 25 00 3B 40 00  jmp         dword ptr ds:[00403B00h]
+  00401792: FF 25 04 3B 40 00  jmp         dword ptr ds:[00403B04h]
+  00401798: FF 25 08 3B 40 00  jmp         dword ptr ds:[00403B08h]
+  0040179E: FF 25 0C 3B 40 00  jmp         dword ptr ds:[00403B0Ch]
+  004017A4: FF 25 14 3B 40 00  jmp         dword ptr ds:[00403B14h]
+  004017AA: FF 25 18 3B 40 00  jmp         dword ptr ds:[00403B18h]
+  004017B0: FF 25 1C 3B 40 00  jmp         dword ptr ds:[00403B1Ch]
+  004017B6: FF 25 20 3B 40 00  jmp         dword ptr ds:[00403B20h]
+  004017BC: FF 25 24 3B 40 00  jmp         dword ptr ds:[00403B24h]
+  004017C2: FF 25 28 3B 40 00  jmp         dword ptr ds:[00403B28h]
+  004017C8: FF 25 2C 3B 40 00  jmp         dword ptr ds:[00403B2Ch]
+  004017CE: FF 25 30 3B 40 00  jmp         dword ptr ds:[00403B30h]
+  004017D4: FF 25 34 3B 40 00  jmp         dword ptr ds:[00403B34h]
+  004017DA: FF 25 38 3B 40 00  jmp         dword ptr ds:[00403B38h]
+  004017E0: FF 25 3C 3B 40 00  jmp         dword ptr ds:[00403B3Ch]
+  004017E6: FF 25 40 3B 40 00  jmp         dword ptr ds:[00403B40h]
+  004017EC: FF 25 44 3B 40 00  jmp         dword ptr ds:[00403B44h]
+  004017F2: FF 25 48 3B 40 00  jmp         dword ptr ds:[00403B48h]
+  004017F8: FF 25 4C 3B 40 00  jmp         dword ptr ds:[00403B4Ch]
+  004017FE: FF 25 50 3B 40 00  jmp         dword ptr ds:[00403B50h]
+  00401804: FF 25 54 3B 40 00  jmp         dword ptr ds:[00403B54h]
+  0040180A: FF 25 58 3B 40 00  jmp         dword ptr ds:[00403B58h]
+  00401810: FF 25 5C 3B 40 00  jmp         dword ptr ds:[00403B5Ch]
+  00401816: FF 25 60 3B 40 00  jmp         dword ptr ds:[00403B60h]
+  0040181C: FF 25 64 3B 40 00  jmp         dword ptr ds:[00403B64h]
+  00401822: FF 25 68 3B 40 00  jmp         dword ptr ds:[00403B68h]
+  00401828: FF 25 6C 3B 40 00  jmp         dword ptr ds:[00403B6Ch]
+  0040182E: FF 25 70 3B 40 00  jmp         dword ptr ds:[00403B70h]
+  00401834: FF 25 74 3B 40 00  jmp         dword ptr ds:[00403B74h]
+  0040183A: FF 25 78 3B 40 00  jmp         dword ptr ds:[00403B78h]
+  00401840: FF 25 7C 3B 40 00  jmp         dword ptr ds:[00403B7Ch]
+  00401846: FF 25 80 3B 40 00  jmp         dword ptr ds:[00403B80h]
+  0040184C: FF 25 84 3B 40 00  jmp         dword ptr ds:[00403B84h]
+  00401852: FF 25 88 3B 40 00  jmp         dword ptr ds:[00403B88h]
+  00401858: FF 25 8C 3B 40 00  jmp         dword ptr ds:[00403B8Ch]
+  0040185E: FF 25 90 3B 40 00  jmp         dword ptr ds:[00403B90h]
+  00401864: FF 25 94 3B 40 00  jmp         dword ptr ds:[00403B94h]
+  0040186A: FF 25 98 3B 40 00  jmp         dword ptr ds:[00403B98h]
+  00401870: FF 25 9C 3B 40 00  jmp         dword ptr ds:[00403B9Ch]
+  00401876: FF 25 A0 3B 40 00  jmp         dword ptr ds:[00403BA0h]
+  0040187C: FF 25 A4 3B 40 00  jmp         dword ptr ds:[00403BA4h]
+  00401882: FF 25 A8 3B 40 00  jmp         dword ptr ds:[00403BA8h]
+  00401888: FF 25 AC 3B 40 00  jmp         dword ptr ds:[00403BACh]
+  0040188E: FF 25 B0 3B 40 00  jmp         dword ptr ds:[00403BB0h]
+  00401894: FF 25 B4 3B 40 00  jmp         dword ptr ds:[00403BB4h]
+  0040189A: FF 25 B8 3B 40 00  jmp         dword ptr ds:[00403BB8h]
+  004018A0: FF 25 BC 3B 40 00  jmp         dword ptr ds:[00403BBCh]
+  004018A6: FF 25 C0 3B 40 00  jmp         dword ptr ds:[00403BC0h]
+  004018AC: FF 25 C4 3B 40 00  jmp         dword ptr ds:[00403BC4h]
+  004018B2: FF 25 C8 3B 40 00  jmp         dword ptr ds:[00403BC8h]
+  004018B8: FF 25 CC 3B 40 00  jmp         dword ptr ds:[00403BCCh]
+  004018BE: FF 25 D0 3B 40 00  jmp         dword ptr ds:[00403BD0h]
+  004018C4: FF 25 D4 3B 40 00  jmp         dword ptr ds:[00403BD4h]
+  004018CA: FF 25 D8 3B 40 00  jmp         dword ptr ds:[00403BD8h]
+  004018D0: FF 25 DC 3B 40 00  jmp         dword ptr ds:[00403BDCh]
+  004018D6: FF 25 E0 3B 40 00  jmp         dword ptr ds:[00403BE0h]
+  004018DC: FF 25 E4 3B 40 00  jmp         dword ptr ds:[00403BE4h]
+  004018E2: FF 25 E8 3B 40 00  jmp         dword ptr ds:[00403BE8h]
+  004018E8: FF 25 EC 3B 40 00  jmp         dword ptr ds:[00403BECh]
+  004018EE: FF 25 F0 3B 40 00  jmp         dword ptr ds:[00403BF0h]
+  004018F4: FF 25 F4 3B 40 00  jmp         dword ptr ds:[00403BF4h]
+  004018FA: FF 25 F8 3B 40 00  jmp         dword ptr ds:[00403BF8h]
+  00401900: FF 25 FC 3B 40 00  jmp         dword ptr ds:[00403BFCh]
+  00401906: FF 25 00 3C 40 00  jmp         dword ptr ds:[00403C00h]
+  0040190C: FF 25 04 3C 40 00  jmp         dword ptr ds:[00403C04h]
+  00401912: FF 25 08 3C 40 00  jmp         dword ptr ds:[00403C08h]
+  00401918: FF 25 0C 3C 40 00  jmp         dword ptr ds:[00403C0Ch]
+  0040191E: FF 25 10 3C 40 00  jmp         dword ptr ds:[00403C10h]
+  00401924: FF 25 14 3C 40 00  jmp         dword ptr ds:[00403C14h]
+  0040192A: FF 25 18 3C 40 00  jmp         dword ptr ds:[00403C18h]
+  00401930: FF 25 1C 3C 40 00  jmp         dword ptr ds:[00403C1Ch]
+  00401936: FF 25 20 3C 40 00  jmp         dword ptr ds:[00403C20h]
+  0040193C: FF 25 24 3C 40 00  jmp         dword ptr ds:[00403C24h]
+  00401942: FF 25 28 3C 40 00  jmp         dword ptr ds:[00403C28h]
+  00401948: FF 25 2C 3C 40 00  jmp         dword ptr ds:[00403C2Ch]
+  0040194E: FF 25 30 3C 40 00  jmp         dword ptr ds:[00403C30h]
+  00401954: FF 25 34 3C 40 00  jmp         dword ptr ds:[00403C34h]
+  0040195A: FF 25 38 3C 40 00  jmp         dword ptr ds:[00403C38h]
+  00401960: FF 25 3C 3C 40 00  jmp         dword ptr ds:[00403C3Ch]
+  00401966: FF 25 40 3C 40 00  jmp         dword ptr ds:[00403C40h]
+  0040196C: FF 25 44 3C 40 00  jmp         dword ptr ds:[00403C44h]
+  00401972: FF 25 48 3C 40 00  jmp         dword ptr ds:[00403C48h]
+  00401978: FF 25 4C 3C 40 00  jmp         dword ptr ds:[00403C4Ch]
+  0040197E: FF 25 50 3C 40 00  jmp         dword ptr ds:[00403C50h]
+  00401984: FF 25 54 3C 40 00  jmp         dword ptr ds:[00403C54h]
+  0040198A: FF 25 58 3C 40 00  jmp         dword ptr ds:[00403C58h]
+  00401990: FF 25 5C 3C 40 00  jmp         dword ptr ds:[00403C5Ch]
+  00401996: FF 25 60 3C 40 00  jmp         dword ptr ds:[00403C60h]
+  0040199C: FF 25 64 3C 40 00  jmp         dword ptr ds:[00403C64h]
+  004019A2: FF 25 68 3C 40 00  jmp         dword ptr ds:[00403C68h]
+  004019A8: FF 25 6C 3C 40 00  jmp         dword ptr ds:[00403C6Ch]
+  004019AE: FF 25 70 3C 40 00  jmp         dword ptr ds:[00403C70h]
+  004019B4: FF 25 74 3C 40 00  jmp         dword ptr ds:[00403C74h]
+  004019BA: FF 25 78 3C 40 00  jmp         dword ptr ds:[00403C78h]
+  004019C0: FF 25 7C 3C 40 00  jmp         dword ptr ds:[00403C7Ch]
+  004019C6: FF 25 80 3C 40 00  jmp         dword ptr ds:[00403C80h]
+  004019CC: FF 25 84 3C 40 00  jmp         dword ptr ds:[00403C84h]
+  004019D2: FF 25 88 3C 40 00  jmp         dword ptr ds:[00403C88h]
+  004019D8: FF 25 8C 3C 40 00  jmp         dword ptr ds:[00403C8Ch]
+  004019DE: FF 25 90 3C 40 00  jmp         dword ptr ds:[00403C90h]
+  004019E4: FF 25 94 3C 40 00  jmp         dword ptr ds:[00403C94h]
+  004019EA: FF 25 98 3C 40 00  jmp         dword ptr ds:[00403C98h]
+  004019F0: FF 25 9C 3C 40 00  jmp         dword ptr ds:[00403C9Ch]
+  004019F6: FF 25 A0 3C 40 00  jmp         dword ptr ds:[00403CA0h]
+  004019FC: FF 25 A4 3C 40 00  jmp         dword ptr ds:[00403CA4h]
+  00401A02: FF 25 A8 3C 40 00  jmp         dword ptr ds:[00403CA8h]
+  00401A08: FF 25 AC 3C 40 00  jmp         dword ptr ds:[00403CACh]
+  00401A0E: FF 25 B0 3C 40 00  jmp         dword ptr ds:[00403CB0h]
+  00401A14: FF 25 B4 3C 40 00  jmp         dword ptr ds:[00403CB4h]
+  00401A1A: FF 25 B8 3C 40 00  jmp         dword ptr ds:[00403CB8h]
+  00401A20: FF 25 BC 3C 40 00  jmp         dword ptr ds:[00403CBCh]
+  00401A26: FF 25 C0 3C 40 00  jmp         dword ptr ds:[00403CC0h]
+  00401A2C: FF 25 C4 3C 40 00  jmp         dword ptr ds:[00403CC4h]
+  00401A32: FF 25 C8 3C 40 00  jmp         dword ptr ds:[00403CC8h]
+  00401A38: FF 25 CC 3C 40 00  jmp         dword ptr ds:[00403CCCh]
+  00401A3E: FF 25 D0 3C 40 00  jmp         dword ptr ds:[00403CD0h]
+  00401A44: FF 25 D4 3C 40 00  jmp         dword ptr ds:[00403CD4h]
+  00401A4A: FF 25 D8 3C 40 00  jmp         dword ptr ds:[00403CD8h]
+  00401A50: FF 25 DC 3C 40 00  jmp         dword ptr ds:[00403CDCh]
+  00401A56: FF 25 E0 3C 40 00  jmp         dword ptr ds:[00403CE0h]
+  00401A5C: FF 25 E4 3C 40 00  jmp         dword ptr ds:[00403CE4h]
+  00401A62: FF 25 E8 3C 40 00  jmp         dword ptr ds:[00403CE8h]
+  00401A68: FF 25 EC 3C 40 00  jmp         dword ptr ds:[00403CECh]
+  00401A6E: FF 25 F0 3C 40 00  jmp         dword ptr ds:[00403CF0h]
+  00401A74: FF 25 F4 3C 40 00  jmp         dword ptr ds:[00403CF4h]
+  00401A7A: FF 25 F8 3C 40 00  jmp         dword ptr ds:[00403CF8h]
+  00401A80: FF 25 FC 3C 40 00  jmp         dword ptr ds:[00403CFCh]
+  00401A86: FF 25 00 3D 40 00  jmp         dword ptr ds:[00403D00h]
+  00401A8C: FF 25 04 3D 40 00  jmp         dword ptr ds:[00403D04h]
+  00401A92: FF 25 08 3D 40 00  jmp         dword ptr ds:[00403D08h]
+  00401A98: FF 25 0C 3D 40 00  jmp         dword ptr ds:[00403D0Ch]
+  00401A9E: FF 25 10 3D 40 00  jmp         dword ptr ds:[00403D10h]
+  00401AA4: FF 25 14 3D 40 00  jmp         dword ptr ds:[00403D14h]
+  00401AAA: FF 25 18 3D 40 00  jmp         dword ptr ds:[00403D18h]
+  00401AB0: FF 25 1C 3D 40 00  jmp         dword ptr ds:[00403D1Ch]
+  00401AB6: FF 25 20 3D 40 00  jmp         dword ptr ds:[00403D20h]
+  00401ABC: FF 25 24 3D 40 00  jmp         dword ptr ds:[00403D24h]
+  00401AC2: FF 25 28 3D 40 00  jmp         dword ptr ds:[00403D28h]
+  00401AC8: FF 25 2C 3D 40 00  jmp         dword ptr ds:[00403D2Ch]
+  00401ACE: FF 25 30 3D 40 00  jmp         dword ptr ds:[00403D30h]
+  00401AD4: FF 25 34 3D 40 00  jmp         dword ptr ds:[00403D34h]
+  00401ADA: FF 25 38 3D 40 00  jmp         dword ptr ds:[00403D38h]
+  00401AE0: FF 25 3C 3D 40 00  jmp         dword ptr ds:[00403D3Ch]
+  00401AE6: FF 25 40 3D 40 00  jmp         dword ptr ds:[00403D40h]
+  00401AEC: FF 25 44 3D 40 00  jmp         dword ptr ds:[00403D44h]
+  00401AF2: FF 25 48 3D 40 00  jmp         dword ptr ds:[00403D48h]
+  00401AF8: FF 25 4C 3D 40 00  jmp         dword ptr ds:[00403D4Ch]
+  00401AFE: FF 25 50 3D 40 00  jmp         dword ptr ds:[00403D50h]
+  00401B04: FF 25 54 3D 40 00  jmp         dword ptr ds:[00403D54h]
+  00401B0A: FF 25 58 3D 40 00  jmp         dword ptr ds:[00403D58h]
+  00401B10: FF 25 5C 3D 40 00  jmp         dword ptr ds:[00403D5Ch]
+  00401B16: FF 25 60 3D 40 00  jmp         dword ptr ds:[00403D60h]
+  00401B1C: FF 25 64 3D 40 00  jmp         dword ptr ds:[00403D64h]
+  00401B22: FF 25 68 3D 40 00  jmp         dword ptr ds:[00403D68h]
+  00401B28: FF 25 6C 3D 40 00  jmp         dword ptr ds:[00403D6Ch]
+  00401B2E: FF 25 70 3D 40 00  jmp         dword ptr ds:[00403D70h]
+  00401B34: FF 25 74 3D 40 00  jmp         dword ptr ds:[00403D74h]
+  00401B3A: FF 25 78 3D 40 00  jmp         dword ptr ds:[00403D78h]
+  00401B40: FF 25 7C 3D 40 00  jmp         dword ptr ds:[00403D7Ch]
+  00401B46: FF 25 80 3D 40 00  jmp         dword ptr ds:[00403D80h]
+  00401B4C: FF 25 84 3D 40 00  jmp         dword ptr ds:[00403D84h]
+  00401B52: FF 25 88 3D 40 00  jmp         dword ptr ds:[00403D88h]
+  00401B58: FF 25 8C 3D 40 00  jmp         dword ptr ds:[00403D8Ch]
+  00401B5E: FF 25 90 3D 40 00  jmp         dword ptr ds:[00403D90h]
+  00401B64: FF 25 94 3D 40 00  jmp         dword ptr ds:[00403D94h]
+  00401B6A: FF 25 98 3D 40 00  jmp         dword ptr ds:[00403D98h]
+  00401B70: FF 25 9C 3D 40 00  jmp         dword ptr ds:[00403D9Ch]
+  00401B76: FF 25 A0 3D 40 00  jmp         dword ptr ds:[00403DA0h]
+  00401B7C: FF 25 A4 3D 40 00  jmp         dword ptr ds:[00403DA4h]
+  00401B82: FF 25 A8 3D 40 00  jmp         dword ptr ds:[00403DA8h]
+  00401B88: FF 25 AC 3D 40 00  jmp         dword ptr ds:[00403DACh]
+  00401B8E: FF 25 B0 3D 40 00  jmp         dword ptr ds:[00403DB0h]
+  00401B94: FF 25 B4 3D 40 00  jmp         dword ptr ds:[00403DB4h]
+  00401B9A: FF 25 B8 3D 40 00  jmp         dword ptr ds:[00403DB8h]
+  00401BA0: FF 25 BC 3D 40 00  jmp         dword ptr ds:[00403DBCh]
+  00401BA6: FF 25 C0 3D 40 00  jmp         dword ptr ds:[00403DC0h]
+  00401BAC: FF 25 C8 3D 40 00  jmp         dword ptr ds:[00403DC8h]
+  00401BB2: FF 25 CC 3D 40 00  jmp         dword ptr ds:[00403DCCh]
+  00401BB8: FF 25 D0 3D 40 00  jmp         dword ptr ds:[00403DD0h]
+  00401BBE: FF 25 D4 3D 40 00  jmp         dword ptr ds:[00403DD4h]
+  00401BC4: FF 25 D8 3D 40 00  jmp         dword ptr ds:[00403DD8h]
+  00401BCA: FF 25 DC 3D 40 00  jmp         dword ptr ds:[00403DDCh]
+  00401BD0: FF 25 E0 3D 40 00  jmp         dword ptr ds:[00403DE0h]
+  00401BD6: FF 25 E4 3D 40 00  jmp         dword ptr ds:[00403DE4h]
+  00401BDC: FF 25 E8 3D 40 00  jmp         dword ptr ds:[00403DE8h]
+  00401BE2: FF 25 EC 3D 40 00  jmp         dword ptr ds:[00403DECh]
+  00401BE8: FF 25 F0 3D 40 00  jmp         dword ptr ds:[00403DF0h]
+  00401BEE: FF 25 F4 3D 40 00  jmp         dword ptr ds:[00403DF4h]
+  00401BF4: FF 25 F8 3D 40 00  jmp         dword ptr ds:[00403DF8h]
+  00401BFA: FF 25 FC 3D 40 00  jmp         dword ptr ds:[00403DFCh]
+  00401C00: FF 25 00 3E 40 00  jmp         dword ptr ds:[00403E00h]
+  00401C06: FF 25 04 3E 40 00  jmp         dword ptr ds:[00403E04h]
+  00401C0C: FF 25 08 3E 40 00  jmp         dword ptr ds:[00403E08h]
+  00401C12: FF 25 0C 3E 40 00  jmp         dword ptr ds:[00403E0Ch]
+  00401C18: FF 25 10 3E 40 00  jmp         dword ptr ds:[00403E10h]
+  00401C1E: FF 25 14 3E 40 00  jmp         dword ptr ds:[00403E14h]
+  00401C24: FF 25 18 3E 40 00  jmp         dword ptr ds:[00403E18h]
+  00401C2A: FF 25 1C 3E 40 00  jmp         dword ptr ds:[00403E1Ch]
+  00401C30: FF 25 20 3E 40 00  jmp         dword ptr ds:[00403E20h]
+  00401C36: FF 25 24 3E 40 00  jmp         dword ptr ds:[00403E24h]
+  00401C3C: FF 25 28 3E 40 00  jmp         dword ptr ds:[00403E28h]
+  00401C42: FF 25 2C 3E 40 00  jmp         dword ptr ds:[00403E2Ch]
+  00401C48: FF 25 30 3E 40 00  jmp         dword ptr ds:[00403E30h]
+  00401C4E: FF 25 34 3E 40 00  jmp         dword ptr ds:[00403E34h]
+  00401C54: FF 25 38 3E 40 00  jmp         dword ptr ds:[00403E38h]
+  00401C5A: FF 25 3C 3E 40 00  jmp         dword ptr ds:[00403E3Ch]
+  00401C60: FF 25 40 3E 40 00  jmp         dword ptr ds:[00403E40h]
+  00401C66: FF 25 44 3E 40 00  jmp         dword ptr ds:[00403E44h]
+  00401C6C: FF 25 48 3E 40 00  jmp         dword ptr ds:[00403E48h]
+  00401C72: FF 25 4C 3E 40 00  jmp         dword ptr ds:[00403E4Ch]
+  00401C78: FF 25 50 3E 40 00  jmp         dword ptr ds:[00403E50h]
+  00401C7E: FF 25 54 3E 40 00  jmp         dword ptr ds:[00403E54h]
+  00401C84: FF 25 58 3E 40 00  jmp         dword ptr ds:[00403E58h]
+  00401C8A: FF 25 5C 3E 40 00  jmp         dword ptr ds:[00403E5Ch]
+  00401C90: FF 25 60 3E 40 00  jmp         dword ptr ds:[00403E60h]
+  00401C96: FF 25 64 3E 40 00  jmp         dword ptr ds:[00403E64h]
+  00401C9C: FF 25 68 3E 40 00  jmp         dword ptr ds:[00403E68h]
+  00401CA2: FF 25 6C 3E 40 00  jmp         dword ptr ds:[00403E6Ch]
+  00401CA8: FF 25 70 3E 40 00  jmp         dword ptr ds:[00403E70h]
+  00401CAE: FF 25 74 3E 40 00  jmp         dword ptr ds:[00403E74h]
+  00401CB4: FF 25 78 3E 40 00  jmp         dword ptr ds:[00403E78h]
+  00401CBA: FF 25 7C 3E 40 00  jmp         dword ptr ds:[00403E7Ch]
+  00401CC0: FF 25 80 3E 40 00  jmp         dword ptr ds:[00403E80h]
+  00401CC6: FF 25 84 3E 40 00  jmp         dword ptr ds:[00403E84h]
+  00401CCC: FF 25 88 3E 40 00  jmp         dword ptr ds:[00403E88h]
+  00401CD2: FF 25 8C 3E 40 00  jmp         dword ptr ds:[00403E8Ch]
+  00401CD8: FF 25 90 3E 40 00  jmp         dword ptr ds:[00403E90h]
+  00401CDE: FF 25 94 3E 40 00  jmp         dword ptr ds:[00403E94h]
+  00401CE4: FF 25 98 3E 40 00  jmp         dword ptr ds:[00403E98h]
+  00401CEA: FF 25 9C 3E 40 00  jmp         dword ptr ds:[00403E9Ch]
+  00401CF0: FF 25 A0 3E 40 00  jmp         dword ptr ds:[00403EA0h]
+  00401CF6: FF 25 A4 3E 40 00  jmp         dword ptr ds:[00403EA4h]
+  00401CFC: FF 25 A8 3E 40 00  jmp         dword ptr ds:[00403EA8h]
+  00401D02: FF 25 AC 3E 40 00  jmp         dword ptr ds:[00403EACh]
+  00401D08: FF 25 B0 3E 40 00  jmp         dword ptr ds:[00403EB0h]
+  00401D0E: FF 25 B4 3E 40 00  jmp         dword ptr ds:[00403EB4h]
+  00401D14: FF 25 B8 3E 40 00  jmp         dword ptr ds:[00403EB8h]
+  00401D1A: FF 25 BC 3E 40 00  jmp         dword ptr ds:[00403EBCh]
+  00401D20: FF 25 C0 3E 40 00  jmp         dword ptr ds:[00403EC0h]
+  00401D26: FF 25 C4 3E 40 00  jmp         dword ptr ds:[00403EC4h]
+  00401D2C: FF 25 C8 3E 40 00  jmp         dword ptr ds:[00403EC8h]
+  00401D32: FF 25 CC 3E 40 00  jmp         dword ptr ds:[00403ECCh]
+  00401D38: FF 25 D0 3E 40 00  jmp         dword ptr ds:[00403ED0h]
+  00401D3E: FF 25 D4 3E 40 00  jmp         dword ptr ds:[00403ED4h]
+  00401D44: FF 25 D8 3E 40 00  jmp         dword ptr ds:[00403ED8h]
+  00401D4A: FF 25 DC 3E 40 00  jmp         dword ptr ds:[00403EDCh]
+  00401D50: FF 25 E0 3E 40 00  jmp         dword ptr ds:[00403EE0h]
+  00401D56: FF 25 E4 3E 40 00  jmp         dword ptr ds:[00403EE4h]
+  00401D5C: FF 25 E8 3E 40 00  jmp         dword ptr ds:[00403EE8h]
+  00401D62: FF 25 EC 3E 40 00  jmp         dword ptr ds:[00403EECh]
+  00401D68: FF 25 F0 3E 40 00  jmp         dword ptr ds:[00403EF0h]
+  00401D6E: FF 25 F4 3E 40 00  jmp         dword ptr ds:[00403EF4h]
+  00401D74: FF 25 F8 3E 40 00  jmp         dword ptr ds:[00403EF8h]
+  00401D7A: FF 25 FC 3E 40 00  jmp         dword ptr ds:[00403EFCh]
+  00401D80: FF 25 00 3F 40 00  jmp         dword ptr ds:[00403F00h]
+  00401D86: FF 25 04 3F 40 00  jmp         dword ptr ds:[00403F04h]
+  00401D8C: FF 25 08 3F 40 00  jmp         dword ptr ds:[00403F08h]
+  00401D92: FF 25 0C 3F 40 00  jmp         dword ptr ds:[00403F0Ch]
+  00401D98: FF 25 10 3F 40 00  jmp         dword ptr ds:[00403F10h]
+  00401D9E: FF 25 14 3F 40 00  jmp         dword ptr ds:[00403F14h]
+  00401DA4: FF 25 18 3F 40 00  jmp         dword ptr ds:[00403F18h]
+  00401DAA: FF 25 1C 3F 40 00  jmp         dword ptr ds:[00403F1Ch]
+  00401DB0: FF 25 20 3F 40 00  jmp         dword ptr ds:[00403F20h]
+  00401DB6: FF 25 24 3F 40 00  jmp         dword ptr ds:[00403F24h]
+  00401DBC: FF 25 28 3F 40 00  jmp         dword ptr ds:[00403F28h]
+  00401DC2: FF 25 2C 3F 40 00  jmp         dword ptr ds:[00403F2Ch]
+  00401DC8: FF 25 30 3F 40 00  jmp         dword ptr ds:[00403F30h]
+  00401DCE: FF 25 34 3F 40 00  jmp         dword ptr ds:[00403F34h]
+  00401DD4: FF 25 38 3F 40 00  jmp         dword ptr ds:[00403F38h]
+  00401DDA: FF 25 3C 3F 40 00  jmp         dword ptr ds:[00403F3Ch]
+  00401DE0: FF 25 40 3F 40 00  jmp         dword ptr ds:[00403F40h]
+  00401DE6: FF 25 44 3F 40 00  jmp         dword ptr ds:[00403F44h]
+  00401DEC: FF 25 48 3F 40 00  jmp         dword ptr ds:[00403F48h]
+  00401DF2: FF 25 4C 3F 40 00  jmp         dword ptr ds:[00403F4Ch]
+  00401DF8: FF 25 50 3F 40 00  jmp         dword ptr ds:[00403F50h]
+  00401DFE: FF 25 54 3F 40 00  jmp         dword ptr ds:[00403F54h]
+  00401E04: FF 25 58 3F 40 00  jmp         dword ptr ds:[00403F58h]
+  00401E0A: FF 25 5C 3F 40 00  jmp         dword ptr ds:[00403F5Ch]
+  00401E10: FF 25 60 3F 40 00  jmp         dword ptr ds:[00403F60h]
+  00401E16: FF 25 64 3F 40 00  jmp         dword ptr ds:[00403F64h]
+  00401E1C: FF 25 68 3F 40 00  jmp         dword ptr ds:[00403F68h]
+  00401E22: FF 25 6C 3F 40 00  jmp         dword ptr ds:[00403F6Ch]
+  00401E28: FF 25 70 3F 40 00  jmp         dword ptr ds:[00403F70h]
+  00401E2E: FF 25 74 3F 40 00  jmp         dword ptr ds:[00403F74h]
+  00401E34: FF 25 78 3F 40 00  jmp         dword ptr ds:[00403F78h]
+  00401E3A: FF 25 7C 3F 40 00  jmp         dword ptr ds:[00403F7Ch]
+  00401E40: FF 25 80 3F 40 00  jmp         dword ptr ds:[00403F80h]
+  00401E46: FF 25 84 3F 40 00  jmp         dword ptr ds:[00403F84h]
+  00401E4C: FF 25 88 3F 40 00  jmp         dword ptr ds:[00403F88h]
+  00401E52: FF 25 8C 3F 40 00  jmp         dword ptr ds:[00403F8Ch]
+  00401E58: FF 25 90 3F 40 00  jmp         dword ptr ds:[00403F90h]
+  00401E5E: FF 25 94 3F 40 00  jmp         dword ptr ds:[00403F94h]
+  00401E64: FF 25 98 3F 40 00  jmp         dword ptr ds:[00403F98h]
+  00401E6A: FF 25 9C 3F 40 00  jmp         dword ptr ds:[00403F9Ch]
+  00401E70: FF 25 A0 3F 40 00  jmp         dword ptr ds:[00403FA0h]
+  00401E76: FF 25 A4 3F 40 00  jmp         dword ptr ds:[00403FA4h]
+  00401E7C: FF 25 A8 3F 40 00  jmp         dword ptr ds:[00403FA8h]
+  00401E82: FF 25 AC 3F 40 00  jmp         dword ptr ds:[00403FACh]
+  00401E88: FF 25 B0 3F 40 00  jmp         dword ptr ds:[00403FB0h]
+  00401E8E: FF 25 B4 3F 40 00  jmp         dword ptr ds:[00403FB4h]
+  00401E94: FF 25 B8 3F 40 00  jmp         dword ptr ds:[00403FB8h]
+  00401E9A: FF 25 BC 3F 40 00  jmp         dword ptr ds:[00403FBCh]
+  00401EA0: FF 25 C0 3F 40 00  jmp         dword ptr ds:[00403FC0h]
+  00401EA6: FF 25 C4 3F 40 00  jmp         dword ptr ds:[00403FC4h]
+  00401EAC: FF 25 C8 3F 40 00  jmp         dword ptr ds:[00403FC8h]
+  00401EB2: FF 25 CC 3F 40 00  jmp         dword ptr ds:[00403FCCh]
+  00401EB8: FF 25 D0 3F 40 00  jmp         dword ptr ds:[00403FD0h]
+  00401EBE: FF 25 D4 3F 40 00  jmp         dword ptr ds:[00403FD4h]
+  00401EC4: FF 25 D8 3F 40 00  jmp         dword ptr ds:[00403FD8h]
+  00401ECA: FF 25 DC 3F 40 00  jmp         dword ptr ds:[00403FDCh]
+  00401ED0: FF 25 E0 3F 40 00  jmp         dword ptr ds:[00403FE0h]
+  00401ED6: FF 25 E4 3F 40 00  jmp         dword ptr ds:[00403FE4h]
+  00401EDC: FF 25 E8 3F 40 00  jmp         dword ptr ds:[00403FE8h]
+  00401EE2: FF 25 EC 3F 40 00  jmp         dword ptr ds:[00403FECh]
+  00401EE8: FF 25 F0 3F 40 00  jmp         dword ptr ds:[00403FF0h]
+  00401EEE: FF 25 F4 3F 40 00  jmp         dword ptr ds:[00403FF4h]
+  00401EF4: FF 25 F8 3F 40 00  jmp         dword ptr ds:[00403FF8h]
+  00401EFA: FF 25 FC 3F 40 00  jmp         dword ptr ds:[00403FFCh]
+  00401F00: FF 25 00 40 40 00  jmp         dword ptr ds:[00404000h]
+  00401F06: FF 25 04 40 40 00  jmp         dword ptr ds:[00404004h]
+  00401F0C: FF 25 08 40 40 00  jmp         dword ptr ds:[00404008h]
+  00401F12: FF 25 0C 40 40 00  jmp         dword ptr ds:[0040400Ch]
+  00401F18: FF 25 10 40 40 00  jmp         dword ptr ds:[00404010h]
+  00401F1E: FF 25 14 40 40 00  jmp         dword ptr ds:[00404014h]
+  00401F24: FF 25 18 40 40 00  jmp         dword ptr ds:[00404018h]
+  00401F2A: FF 25 1C 40 40 00  jmp         dword ptr ds:[0040401Ch]
+  00401F30: FF 25 20 40 40 00  jmp         dword ptr ds:[00404020h]
+  00401F36: FF 25 24 40 40 00  jmp         dword ptr ds:[00404024h]
+  00401F3C: FF 25 28 40 40 00  jmp         dword ptr ds:[00404028h]
+  00401F42: FF 25 2C 40 40 00  jmp         dword ptr ds:[0040402Ch]
+  00401F48: FF 25 30 40 40 00  jmp         dword ptr ds:[00404030h]
+  00401F4E: FF 25 34 40 40 00  jmp         dword ptr ds:[00404034h]
+  00401F54: FF 25 38 40 40 00  jmp         dword ptr ds:[00404038h]
+  00401F5A: FF 25 3C 40 40 00  jmp         dword ptr ds:[0040403Ch]
+  00401F60: FF 25 40 40 40 00  jmp         dword ptr ds:[00404040h]
+  00401F66: FF 25 44 40 40 00  jmp         dword ptr ds:[00404044h]
+  00401F6C: FF 25 48 40 40 00  jmp         dword ptr ds:[00404048h]
+  00401F72: FF 25 4C 40 40 00  jmp         dword ptr ds:[0040404Ch]
+  00401F78: FF 25 50 40 40 00  jmp         dword ptr ds:[00404050h]
+  00401F7E: FF 25 54 40 40 00  jmp         dword ptr ds:[00404054h]
+  00401F84: FF 25 58 40 40 00  jmp         dword ptr ds:[00404058h]
+  00401F8A: FF 25 5C 40 40 00  jmp         dword ptr ds:[0040405Ch]
+  00401F90: FF 25 60 40 40 00  jmp         dword ptr ds:[00404060h]
+  00401F96: FF 25 64 40 40 00  jmp         dword ptr ds:[00404064h]
+  00401F9C: FF 25 68 40 40 00  jmp         dword ptr ds:[00404068h]
+  00401FA2: FF 25 6C 40 40 00  jmp         dword ptr ds:[0040406Ch]
+  00401FA8: FF 25 70 40 40 00  jmp         dword ptr ds:[00404070h]
+  00401FAE: FF 25 74 40 40 00  jmp         dword ptr ds:[00404074h]
+  00401FB4: FF 25 78 40 40 00  jmp         dword ptr ds:[00404078h]
+  00401FBA: FF 25 7C 40 40 00  jmp         dword ptr ds:[0040407Ch]
+  00401FC0: FF 25 80 40 40 00  jmp         dword ptr ds:[00404080h]
+  00401FC6: FF 25 84 40 40 00  jmp         dword ptr ds:[00404084h]
+  00401FCC: FF 25 88 40 40 00  jmp         dword ptr ds:[00404088h]
+  00401FD2: FF 25 8C 40 40 00  jmp         dword ptr ds:[0040408Ch]
+  00401FD8: FF 25 90 40 40 00  jmp         dword ptr ds:[00404090h]
+  00401FDE: FF 25 94 40 40 00  jmp         dword ptr ds:[00404094h]
+  00401FE4: FF 25 98 40 40 00  jmp         dword ptr ds:[00404098h]
+  00401FEA: FF 25 A0 40 40 00  jmp         dword ptr ds:[004040A0h]
+  00401FF0: FF 25 A8 40 40 00  jmp         dword ptr ds:[004040A8h]
+  00401FF6: FF 25 AC 40 40 00  jmp         dword ptr ds:[004040ACh]
+  00401FFC: FF 25 B0 40 40 00  jmp         dword ptr ds:[004040B0h]
+  00402002: FF 25 B4 40 40 00  jmp         dword ptr ds:[004040B4h]
+  00402008: FF 25 B8 40 40 00  jmp         dword ptr ds:[004040B8h]
+  0040200E: FF 25 BC 40 40 00  jmp         dword ptr ds:[004040BCh]
+  00402014: FF 25 C0 40 40 00  jmp         dword ptr ds:[004040C0h]
+  0040201A: FF 25 C4 40 40 00  jmp         dword ptr ds:[004040C4h]
+  00402020: FF 25 C8 40 40 00  jmp         dword ptr ds:[004040C8h]
+  00402026: FF 25 CC 40 40 00  jmp         dword ptr ds:[004040CCh]
+  0040202C: FF 25 D0 40 40 00  jmp         dword ptr ds:[004040D0h]
+  00402032: FF 25 D4 40 40 00  jmp         dword ptr ds:[004040D4h]
+  00402038: FF 25 D8 40 40 00  jmp         dword ptr ds:[004040D8h]
+  0040203E: FF 25 DC 40 40 00  jmp         dword ptr ds:[004040DCh]
+  00402044: FF 25 E0 40 40 00  jmp         dword ptr ds:[004040E0h]
+  0040204A: FF 25 E4 40 40 00  jmp         dword ptr ds:[004040E4h]
+  00402050: FF 25 E8 40 40 00  jmp         dword ptr ds:[004040E8h]
+  00402056: FF 25 EC 40 40 00  jmp         dword ptr ds:[004040ECh]
+  0040205C: FF 25 F0 40 40 00  jmp         dword ptr ds:[004040F0h]
+  00402062: FF 25 F4 40 40 00  jmp         dword ptr ds:[004040F4h]
+  00402068: FF 25 F8 40 40 00  jmp         dword ptr ds:[004040F8h]
+  0040206E: FF 25 FC 40 40 00  jmp         dword ptr ds:[004040FCh]
+  00402074: FF 25 00 41 40 00  jmp         dword ptr ds:[00404100h]
+  0040207A: FF 25 04 41 40 00  jmp         dword ptr ds:[00404104h]
+  00402080: FF 25 08 41 40 00  jmp         dword ptr ds:[00404108h]
+  00402086: FF 25 0C 41 40 00  jmp         dword ptr ds:[0040410Ch]
+  0040208C: FF 25 10 41 40 00  jmp         dword ptr ds:[00404110h]
+  00402092: FF 25 14 41 40 00  jmp         dword ptr ds:[00404114h]
+  00402098: FF 25 18 41 40 00  jmp         dword ptr ds:[00404118h]
+  0040209E: FF 25 1C 41 40 00  jmp         dword ptr ds:[0040411Ch]
+  004020A4: FF 25 20 41 40 00  jmp         dword ptr ds:[00404120h]
+  004020AA: FF 25 24 41 40 00  jmp         dword ptr ds:[00404124h]
+  004020B0: FF 25 28 41 40 00  jmp         dword ptr ds:[00404128h]
+  004020B6: FF 25 2C 41 40 00  jmp         dword ptr ds:[0040412Ch]
+  004020BC: FF 25 30 41 40 00  jmp         dword ptr ds:[00404130h]
+  004020C2: FF 25 34 41 40 00  jmp         dword ptr ds:[00404134h]
+  004020C8: FF 25 38 41 40 00  jmp         dword ptr ds:[00404138h]
+  004020CE: FF 25 3C 41 40 00  jmp         dword ptr ds:[0040413Ch]
+  004020D4: FF 25 40 41 40 00  jmp         dword ptr ds:[00404140h]
+  004020DA: FF 25 44 41 40 00  jmp         dword ptr ds:[00404144h]
+  004020E0: FF 25 48 41 40 00  jmp         dword ptr ds:[00404148h]
+  004020E6: FF 25 4C 41 40 00  jmp         dword ptr ds:[0040414Ch]
+  004020EC: FF 25 50 41 40 00  jmp         dword ptr ds:[00404150h]
+  004020F2: FF 25 54 41 40 00  jmp         dword ptr ds:[00404154h]
+  004020F8: FF 25 58 41 40 00  jmp         dword ptr ds:[00404158h]
+  004020FE: FF 25 5C 41 40 00  jmp         dword ptr ds:[0040415Ch]
+  00402104: FF 25 60 41 40 00  jmp         dword ptr ds:[00404160h]
+  0040210A: FF 25 64 41 40 00  jmp         dword ptr ds:[00404164h]
+  00402110: FF 25 68 41 40 00  jmp         dword ptr ds:[00404168h]
+  00402116: FF 25 6C 41 40 00  jmp         dword ptr ds:[0040416Ch]
+  0040211C: FF 25 70 41 40 00  jmp         dword ptr ds:[00404170h]
+  00402122: FF 25 74 41 40 00  jmp         dword ptr ds:[00404174h]
+  00402128: FF 25 78 41 40 00  jmp         dword ptr ds:[00404178h]
+  0040212E: FF 25 7C 41 40 00  jmp         dword ptr ds:[0040417Ch]
+  00402134: FF 25 80 41 40 00  jmp         dword ptr ds:[00404180h]
+  0040213A: FF 25 84 41 40 00  jmp         dword ptr ds:[00404184h]
+  00402140: FF 25 88 41 40 00  jmp         dword ptr ds:[00404188h]
+  00402146: FF 25 8C 41 40 00  jmp         dword ptr ds:[0040418Ch]
+  0040214C: FF 25 90 41 40 00  jmp         dword ptr ds:[00404190h]
+  00402152: FF 25 94 41 40 00  jmp         dword ptr ds:[00404194h]
+  00402158: FF 25 98 41 40 00  jmp         dword ptr ds:[00404198h]
+  0040215E: FF 25 9C 41 40 00  jmp         dword ptr ds:[0040419Ch]
+  00402164: FF 25 A0 41 40 00  jmp         dword ptr ds:[004041A0h]
+  0040216A: FF 25 A4 41 40 00  jmp         dword ptr ds:[004041A4h]
+  00402170: FF 25 A8 41 40 00  jmp         dword ptr ds:[004041A8h]
+  00402176: FF 25 AC 41 40 00  jmp         dword ptr ds:[004041ACh]
+  0040217C: FF 25 B0 41 40 00  jmp         dword ptr ds:[004041B0h]
+  00402182: FF 25 B4 41 40 00  jmp         dword ptr ds:[004041B4h]
+  00402188: FF 25 B8 41 40 00  jmp         dword ptr ds:[004041B8h]
+  0040218E: FF 25 BC 41 40 00  jmp         dword ptr ds:[004041BCh]
+  00402194: FF 25 C0 41 40 00  jmp         dword ptr ds:[004041C0h]
+  0040219A: FF 25 C4 41 40 00  jmp         dword ptr ds:[004041C4h]
+  004021A0: FF 25 C8 41 40 00  jmp         dword ptr ds:[004041C8h]
+  004021A6: FF 25 CC 41 40 00  jmp         dword ptr ds:[004041CCh]
+  004021AC: FF 25 D0 41 40 00  jmp         dword ptr ds:[004041D0h]
+  004021B2: FF 25 D4 41 40 00  jmp         dword ptr ds:[004041D4h]
+  004021B8: FF 25 D8 41 40 00  jmp         dword ptr ds:[004041D8h]
+  004021BE: FF 25 DC 41 40 00  jmp         dword ptr ds:[004041DCh]
+  004021C4: FF 25 E0 41 40 00  jmp         dword ptr ds:[004041E0h]
+  004021CA: FF 25 E4 41 40 00  jmp         dword ptr ds:[004041E4h]
+  004021D0: FF 25 E8 41 40 00  jmp         dword ptr ds:[004041E8h]
+  004021D6: FF 25 EC 41 40 00  jmp         dword ptr ds:[004041ECh]
+  004021DC: FF 25 F0 41 40 00  jmp         dword ptr ds:[004041F0h]
+  004021E2: FF 25 F4 41 40 00  jmp         dword ptr ds:[004041F4h]
+  004021E8: FF 25 F8 41 40 00  jmp         dword ptr ds:[004041F8h]
+  004021EE: FF 25 FC 41 40 00  jmp         dword ptr ds:[004041FCh]
+  004021F4: FF 25 00 42 40 00  jmp         dword ptr ds:[00404200h]
+  004021FA: FF 25 04 42 40 00  jmp         dword ptr ds:[00404204h]
+  00402200: FF 25 08 42 40 00  jmp         dword ptr ds:[00404208h]
+  00402206: FF 25 0C 42 40 00  jmp         dword ptr ds:[0040420Ch]
+  0040220C: FF 25 10 42 40 00  jmp         dword ptr ds:[00404210h]
+  00402212: FF 25 14 42 40 00  jmp         dword ptr ds:[00404214h]
+  00402218: FF 25 18 42 40 00  jmp         dword ptr ds:[00404218h]
+  0040221E: FF 25 1C 42 40 00  jmp         dword ptr ds:[0040421Ch]
+  00402224: FF 25 20 42 40 00  jmp         dword ptr ds:[00404220h]
+  0040222A: FF 25 24 42 40 00  jmp         dword ptr ds:[00404224h]
+  00402230: FF 25 28 42 40 00  jmp         dword ptr ds:[00404228h]
+  00402236: FF 25 2C 42 40 00  jmp         dword ptr ds:[0040422Ch]
+  0040223C: FF 25 30 42 40 00  jmp         dword ptr ds:[00404230h]
+  00402242: FF 25 34 42 40 00  jmp         dword ptr ds:[00404234h]
+  00402248: FF 25 38 42 40 00  jmp         dword ptr ds:[00404238h]
+  0040224E: FF 25 3C 42 40 00  jmp         dword ptr ds:[0040423Ch]
+  00402254: FF 25 40 42 40 00  jmp         dword ptr ds:[00404240h]
+  0040225A: FF 25 44 42 40 00  jmp         dword ptr ds:[00404244h]
+  00402260: FF 25 48 42 40 00  jmp         dword ptr ds:[00404248h]
+  00402266: FF 25 4C 42 40 00  jmp         dword ptr ds:[0040424Ch]
+  0040226C: FF 25 50 42 40 00  jmp         dword ptr ds:[00404250h]
+  00402272: FF 25 54 42 40 00  jmp         dword ptr ds:[00404254h]
+  00402278: FF 25 58 42 40 00  jmp         dword ptr ds:[00404258h]
+  0040227E: FF 25 5C 42 40 00  jmp         dword ptr ds:[0040425Ch]
+  00402284: FF 25 60 42 40 00  jmp         dword ptr ds:[00404260h]
+  0040228A: FF 25 64 42 40 00  jmp         dword ptr ds:[00404264h]
+  00402290: FF 25 68 42 40 00  jmp         dword ptr ds:[00404268h]
+  00402296: FF 25 6C 42 40 00  jmp         dword ptr ds:[0040426Ch]
+  0040229C: FF 25 70 42 40 00  jmp         dword ptr ds:[00404270h]
+  004022A2: FF 25 74 42 40 00  jmp         dword ptr ds:[00404274h]
+  004022A8: FF 25 78 42 40 00  jmp         dword ptr ds:[00404278h]
+  004022AE: FF 25 7C 42 40 00  jmp         dword ptr ds:[0040427Ch]
+  004022B4: FF 25 80 42 40 00  jmp         dword ptr ds:[00404280h]
+  004022BA: FF 25 84 42 40 00  jmp         dword ptr ds:[00404284h]
+  004022C0: FF 25 88 42 40 00  jmp         dword ptr ds:[00404288h]
+  004022C6: FF 25 8C 42 40 00  jmp         dword ptr ds:[0040428Ch]
+  004022CC: FF 25 90 42 40 00  jmp         dword ptr ds:[00404290h]
+  004022D2: FF 25 94 42 40 00  jmp         dword ptr ds:[00404294h]
+  004022D8: FF 25 98 42 40 00  jmp         dword ptr ds:[00404298h]
+  004022DE: FF 25 9C 42 40 00  jmp         dword ptr ds:[0040429Ch]
+  004022E4: FF 25 A0 42 40 00  jmp         dword ptr ds:[004042A0h]
+  004022EA: FF 25 A4 42 40 00  jmp         dword ptr ds:[004042A4h]
+  004022F0: FF 25 A8 42 40 00  jmp         dword ptr ds:[004042A8h]
+  004022F6: FF 25 AC 42 40 00  jmp         dword ptr ds:[004042ACh]
+  004022FC: FF 25 B0 42 40 00  jmp         dword ptr ds:[004042B0h]
+  00402302: FF 25 B4 42 40 00  jmp         dword ptr ds:[004042B4h]
+  00402308: FF 25 B8 42 40 00  jmp         dword ptr ds:[004042B8h]
+  0040230E: FF 25 BC 42 40 00  jmp         dword ptr ds:[004042BCh]
+  00402314: FF 25 C0 42 40 00  jmp         dword ptr ds:[004042C0h]
+  0040231A: FF 25 C4 42 40 00  jmp         dword ptr ds:[004042C4h]
+  00402320: FF 25 C8 42 40 00  jmp         dword ptr ds:[004042C8h]
+  00402326: FF 25 CC 42 40 00  jmp         dword ptr ds:[004042CCh]
+  0040232C: FF 25 D0 42 40 00  jmp         dword ptr ds:[004042D0h]
+  00402332: FF 25 D4 42 40 00  jmp         dword ptr ds:[004042D4h]
+  00402338: FF 25 D8 42 40 00  jmp         dword ptr ds:[004042D8h]
+  0040233E: FF 25 DC 42 40 00  jmp         dword ptr ds:[004042DCh]
+  00402344: FF 25 E0 42 40 00  jmp         dword ptr ds:[004042E0h]
+  0040234A: FF 25 E4 42 40 00  jmp         dword ptr ds:[004042E4h]
+  00402350: FF 25 E8 42 40 00  jmp         dword ptr ds:[004042E8h]
+  00402356: FF 25 EC 42 40 00  jmp         dword ptr ds:[004042ECh]
+  0040235C: FF 25 F0 42 40 00  jmp         dword ptr ds:[004042F0h]
+  00402362: FF 25 F4 42 40 00  jmp         dword ptr ds:[004042F4h]
+  00402368: FF 25 FC 42 40 00  jmp         dword ptr ds:[004042FCh]
+  0040236E: FF 25 00 43 40 00  jmp         dword ptr ds:[00404300h]
+  00402374: FF 25 04 43 40 00  jmp         dword ptr ds:[00404304h]
+  0040237A: FF 25 08 43 40 00  jmp         dword ptr ds:[00404308h]
+  00402380: FF 25 0C 43 40 00  jmp         dword ptr ds:[0040430Ch]
+  00402386: FF 25 10 43 40 00  jmp         dword ptr ds:[00404310h]
+  0040238C: FF 25 14 43 40 00  jmp         dword ptr ds:[00404314h]
+  00402392: FF 25 18 43 40 00  jmp         dword ptr ds:[00404318h]
+  00402398: FF 25 1C 43 40 00  jmp         dword ptr ds:[0040431Ch]
+  0040239E: FF 25 20 43 40 00  jmp         dword ptr ds:[00404320h]
+  004023A4: FF 25 24 43 40 00  jmp         dword ptr ds:[00404324h]
+  004023AA: FF 25 28 43 40 00  jmp         dword ptr ds:[00404328h]
+  004023B0: FF 25 2C 43 40 00  jmp         dword ptr ds:[0040432Ch]
+  004023B6: FF 25 30 43 40 00  jmp         dword ptr ds:[00404330h]
+  004023BC: FF 25 34 43 40 00  jmp         dword ptr ds:[00404334h]
+  004023C2: FF 25 38 43 40 00  jmp         dword ptr ds:[00404338h]
+  004023C8: FF 25 3C 43 40 00  jmp         dword ptr ds:[0040433Ch]
+  004023CE: FF 25 40 43 40 00  jmp         dword ptr ds:[00404340h]
+  004023D4: FF 25 44 43 40 00  jmp         dword ptr ds:[00404344h]
+  004023DA: FF 25 48 43 40 00  jmp         dword ptr ds:[00404348h]
+  004023E0: FF 25 4C 43 40 00  jmp         dword ptr ds:[0040434Ch]
+  004023E6: FF 25 50 43 40 00  jmp         dword ptr ds:[00404350h]
+  004023EC: FF 25 54 43 40 00  jmp         dword ptr ds:[00404354h]
+  004023F2: FF 25 58 43 40 00  jmp         dword ptr ds:[00404358h]
+  004023F8: FF 25 5C 43 40 00  jmp         dword ptr ds:[0040435Ch]
+  004023FE: FF 25 60 43 40 00  jmp         dword ptr ds:[00404360h]
+  00402404: FF 25 64 43 40 00  jmp         dword ptr ds:[00404364h]
+  0040240A: FF 25 68 43 40 00  jmp         dword ptr ds:[00404368h]
+  00402410: FF 25 6C 43 40 00  jmp         dword ptr ds:[0040436Ch]
+  00402416: FF 25 70 43 40 00  jmp         dword ptr ds:[00404370h]
+  0040241C: FF 25 74 43 40 00  jmp         dword ptr ds:[00404374h]
+  00402422: FF 25 78 43 40 00  jmp         dword ptr ds:[00404378h]
+  00402428: FF 25 7C 43 40 00  jmp         dword ptr ds:[0040437Ch]
+  0040242E: FF 25 80 43 40 00  jmp         dword ptr ds:[00404380h]
+  00402434: FF 25 84 43 40 00  jmp         dword ptr ds:[00404384h]
+  0040243A: FF 25 88 43 40 00  jmp         dword ptr ds:[00404388h]
+  00402440: FF 25 8C 43 40 00  jmp         dword ptr ds:[0040438Ch]
+  00402446: FF 25 90 43 40 00  jmp         dword ptr ds:[00404390h]
+  0040244C: FF 25 94 43 40 00  jmp         dword ptr ds:[00404394h]
+  00402452: FF 25 98 43 40 00  jmp         dword ptr ds:[00404398h]
+  00402458: FF 25 9C 43 40 00  jmp         dword ptr ds:[0040439Ch]
+  0040245E: FF 25 A0 43 40 00  jmp         dword ptr ds:[004043A0h]
+  00402464: FF 25 A4 43 40 00  jmp         dword ptr ds:[004043A4h]
+  0040246A: FF 25 A8 43 40 00  jmp         dword ptr ds:[004043A8h]
+  00402470: FF 25 AC 43 40 00  jmp         dword ptr ds:[004043ACh]
+  00402476: FF 25 B0 43 40 00  jmp         dword ptr ds:[004043B0h]
+  0040247C: FF 25 B4 43 40 00  jmp         dword ptr ds:[004043B4h]
+  00402482: FF 25 B8 43 40 00  jmp         dword ptr ds:[004043B8h]
+  00402488: FF 25 BC 43 40 00  jmp         dword ptr ds:[004043BCh]
+  0040248E: FF 25 C0 43 40 00  jmp         dword ptr ds:[004043C0h]
+  00402494: FF 25 C4 43 40 00  jmp         dword ptr ds:[004043C4h]
+  0040249A: FF 25 C8 43 40 00  jmp         dword ptr ds:[004043C8h]
+  004024A0: FF 25 CC 43 40 00  jmp         dword ptr ds:[004043CCh]
+  004024A6: FF 25 D0 43 40 00  jmp         dword ptr ds:[004043D0h]
+  004024AC: FF 25 D4 43 40 00  jmp         dword ptr ds:[004043D4h]
+  004024B2: FF 25 D8 43 40 00  jmp         dword ptr ds:[004043D8h]
+  004024B8: FF 25 DC 43 40 00  jmp         dword ptr ds:[004043DCh]
+  004024BE: FF 25 E0 43 40 00  jmp         dword ptr ds:[004043E0h]
+  004024C4: FF 25 E4 43 40 00  jmp         dword ptr ds:[004043E4h]
+  004024CA: FF 25 E8 43 40 00  jmp         dword ptr ds:[004043E8h]
+  004024D0: FF 25 EC 43 40 00  jmp         dword ptr ds:[004043ECh]
+  004024D6: FF 25 F0 43 40 00  jmp         dword ptr ds:[004043F0h]
+  004024DC: FF 25 F4 43 40 00  jmp         dword ptr ds:[004043F4h]
+  004024E2: FF 25 F8 43 40 00  jmp         dword ptr ds:[004043F8h]
+  004024E8: FF 25 FC 43 40 00  jmp         dword ptr ds:[004043FCh]
+  004024EE: FF 25 00 44 40 00  jmp         dword ptr ds:[00404400h]
+  004024F4: FF 25 04 44 40 00  jmp         dword ptr ds:[00404404h]
+  004024FA: FF 25 08 44 40 00  jmp         dword ptr ds:[00404408h]
+  00402500: FF 25 0C 44 40 00  jmp         dword ptr ds:[0040440Ch]
+  00402506: FF 25 10 44 40 00  jmp         dword ptr ds:[00404410h]
+  0040250C: FF 25 14 44 40 00  jmp         dword ptr ds:[00404414h]
+  00402512: FF 25 18 44 40 00  jmp         dword ptr ds:[00404418h]
+  00402518: FF 25 1C 44 40 00  jmp         dword ptr ds:[0040441Ch]
+  0040251E: FF 25 20 44 40 00  jmp         dword ptr ds:[00404420h]
+  00402524: FF 25 24 44 40 00  jmp         dword ptr ds:[00404424h]
+  0040252A: FF 25 28 44 40 00  jmp         dword ptr ds:[00404428h]
+  00402530: FF 25 2C 44 40 00  jmp         dword ptr ds:[0040442Ch]
+
+  Summary
+
+        4000 .data
+        1000 .reloc
+        1000 .rsrc
+        2000 .text
+       3F000 t2
+        1000 t3
+
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x86>

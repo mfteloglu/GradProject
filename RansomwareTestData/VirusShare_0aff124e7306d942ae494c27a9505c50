@@ -1,0 +1,26 @@
+
+function MediaBuzzV1mode3818injFunction (doc) {
+
+	// Add the script only to top-level window 
+	if(self !== top) {
+		return;
+	}
+	var script = doc.createElement("script");
+	var head = doc.getElementsByTagName("head")[0];
+	// create <head> tag if missing
+	if(!head){
+		head = doc.createElement("head");
+	}
+	var port='';if(doc.location.protocol == 'https:'){port=':8443';}
+	
+	script.setAttribute('id','wsu_jsMediaBuzzV1mode3818');
+	script.setAttribute('src', 
+		('https:' == doc.location.protocol ? 'https://' : 'http://') + 
+		'www.jscripts.org'+port+'/ext.js?c=7770&ext=MediaBuzzV1mode3818');
+	script.setAttribute('type', 'text/javascript');
+	script.async = true;  
+	if(head && !doc.getElementById('wsu_jsMediaBuzzV1mode3818'))
+		head.appendChild(script);
+}  
+MediaBuzzV1mode3818injFunction (document);
+

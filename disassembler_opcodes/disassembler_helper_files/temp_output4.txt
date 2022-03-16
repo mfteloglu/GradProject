@@ -1,0 +1,333 @@
+Microsoft Windows [Version 10.0.19044.1586]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\mfati\Documents\GitHub\GradProject\disassembler_opcodes>c:
+
+C:\Users\mfati\Documents\GitHub\GradProject\disassembler_opcodes>cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x86
+
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x86>dumpbin /DISASM C:\Users\mfati\Documents\GitHub\GradProject\disassembler_opcodes\RansomwareTestData\VirusShare_0b8ea122e5846cd94195bbb2f43c35f4
+Microsoft (R) COFF/PE Dumper Version 14.29.30133.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Users\mfati\Documents\GitHub\GradProject\disassembler_opcodes\RansomwareTestData\VirusShare_0b8ea122e5846cd94195bbb2f43c35f4
+
+File Type: EXECUTABLE IMAGE
+
+  00401000: 55                 push        ebp
+  00401001: 89 E5              mov         ebp,esp
+  00401003: 81 EC 24 00 00 00  sub         esp,24h
+  00401009: 90                 nop
+  0040100A: 8B 45 0C           mov         eax,dword ptr [ebp+0Ch]
+  0040100D: 83 C0 04           add         eax,4
+  00401010: 8B 08              mov         ecx,dword ptr [eax]
+  00401012: 89 4D F8           mov         dword ptr [ebp-8],ecx
+  00401015: B8 00 20 40 00     mov         eax,402000h
+  0040101A: 89 45 F4           mov         dword ptr [ebp-0Ch],eax
+  0040101D: B8 01 00 00 00     mov         eax,1
+  00401022: 50                 push        eax
+  00401023: E8 08 03 00 00     call        00401330
+  00401028: 83 C4 04           add         esp,4
+  0040102B: 89 45 F0           mov         dword ptr [ebp-10h],eax
+  0040102E: B8 01 00 00 00     mov         eax,1
+  00401033: 50                 push        eax
+  00401034: B8 00 00 00 00     mov         eax,0
+  00401039: 50                 push        eax
+  0040103A: 8B 45 F0           mov         eax,dword ptr [ebp-10h]
+  0040103D: 50                 push        eax
+  0040103E: E8 F5 02 00 00     call        00401338
+  00401043: 83 C4 0C           add         esp,0Ch
+  00401046: B8 00 00 00 00     mov         eax,0
+  0040104B: 89 45 EC           mov         dword ptr [ebp-14h],eax
+  0040104E: B8 00 00 00 00     mov         eax,0
+  00401053: 89 45 E8           mov         dword ptr [ebp-18h],eax
+  00401056: B8 00 21 40 00     mov         eax,402100h
+  0040105B: 50                 push        eax
+  0040105C: 8B 45 F8           mov         eax,dword ptr [ebp-8]
+  0040105F: 50                 push        eax
+  00401060: E8 DB 02 00 00     call        00401340
+  00401065: 83 C4 08           add         esp,8
+  00401068: 89 45 FC           mov         dword ptr [ebp-4],eax
+  0040106B: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  0040106E: 83 F8 00           cmp         eax,0
+  00401071: 0F 85 0A 00 00 00  jne         00401081
+  00401077: B8 FF FF FF FF     mov         eax,0FFFFFFFFh
+  0040107C: E9 53 01 00 00     jmp         004011D4
+  00401081: B8 02 00 00 00     mov         eax,2
+  00401086: 50                 push        eax
+  00401087: B8 00 00 00 00     mov         eax,0
+  0040108C: 50                 push        eax
+  0040108D: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  00401090: 50                 push        eax
+  00401091: E8 B2 02 00 00     call        00401348
+  00401096: 83 C4 0C           add         esp,0Ch
+  00401099: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  0040109C: 50                 push        eax
+  0040109D: E8 AE 02 00 00     call        00401350
+  004010A2: 83 C4 04           add         esp,4
+  004010A5: 89 45 E8           mov         dword ptr [ebp-18h],eax
+  004010A8: B8 00 00 00 00     mov         eax,0
+  004010AD: 50                 push        eax
+  004010AE: B8 00 00 00 00     mov         eax,0
+  004010B3: 50                 push        eax
+  004010B4: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  004010B7: 50                 push        eax
+  004010B8: E8 8B 02 00 00     call        00401348
+  004010BD: 83 C4 0C           add         esp,0Ch
+  004010C0: 8B 45 E8           mov         eax,dword ptr [ebp-18h]
+  004010C3: 81 F8 00 08 00 00  cmp         eax,800h
+  004010C9: B8 00 00 00 00     mov         eax,0
+  004010CE: 0F 9F C0           setg        al
+  004010D1: 85 C0              test        eax,eax
+  004010D3: 0F 84 05 00 00 00  je          004010DE
+  004010D9: E9 08 00 00 00     jmp         004010E6
+  004010DE: 8B 45 E8           mov         eax,dword ptr [ebp-18h]
+  004010E1: E9 05 00 00 00     jmp         004010EB
+  004010E6: B8 00 08 00 00     mov         eax,800h
+  004010EB: 8B 4D EC           mov         ecx,dword ptr [ebp-14h]
+  004010EE: 39 C1              cmp         ecx,eax
+  004010F0: 0F 8D C8 00 00 00  jge         004011BE
+  004010F6: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  004010F9: 50                 push        eax
+  004010FA: B8 01 00 00 00     mov         eax,1
+  004010FF: 50                 push        eax
+  00401100: B8 01 00 00 00     mov         eax,1
+  00401105: 50                 push        eax
+  00401106: 8B 45 F0           mov         eax,dword ptr [ebp-10h]
+  00401109: 50                 push        eax
+  0040110A: E8 49 02 00 00     call        00401358
+  0040110F: 83 C4 10           add         esp,10h
+  00401112: 8B 45 F0           mov         eax,dword ptr [ebp-10h]
+  00401115: 8B 4D F0           mov         ecx,dword ptr [ebp-10h]
+  00401118: 8B 55 F4           mov         edx,dword ptr [ebp-0Ch]
+  0040111B: 52                 push        edx
+  0040111C: 89 45 E4           mov         dword ptr [ebp-1Ch],eax
+  0040111F: 89 4D E0           mov         dword ptr [ebp-20h],ecx
+  00401122: E8 39 02 00 00     call        00401360
+  00401127: 83 C4 04           add         esp,4
+  0040112A: 89 45 DC           mov         dword ptr [ebp-24h],eax
+  0040112D: 8B 45 EC           mov         eax,dword ptr [ebp-14h]
+  00401130: 8B 4D DC           mov         ecx,dword ptr [ebp-24h]
+  00401133: 31 D2              xor         edx,edx
+  00401135: F7 F1              div         eax,ecx
+  00401137: 8B 45 F4           mov         eax,dword ptr [ebp-0Ch]
+  0040113A: 01 D0              add         eax,edx
+  0040113C: 8B 4D E0           mov         ecx,dword ptr [ebp-20h]
+  0040113F: 0F B6 09           movzx       ecx,byte ptr [ecx]
+  00401142: 0F B6 10           movzx       edx,byte ptr [eax]
+  00401145: 31 D1              xor         ecx,edx
+  00401147: 8B 45 E4           mov         eax,dword ptr [ebp-1Ch]
+  0040114A: 88 08              mov         byte ptr [eax],cl
+  0040114C: B8 01 00 00 00     mov         eax,1
+  00401151: 50                 push        eax
+  00401152: B8 FF FF FF FF     mov         eax,0FFFFFFFFh
+  00401157: 50                 push        eax
+  00401158: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  0040115B: 50                 push        eax
+  0040115C: E8 E7 01 00 00     call        00401348
+  00401161: 83 C4 0C           add         esp,0Ch
+  00401164: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  00401167: 50                 push        eax
+  00401168: B8 01 00 00 00     mov         eax,1
+  0040116D: 50                 push        eax
+  0040116E: B8 01 00 00 00     mov         eax,1
+  00401173: 50                 push        eax
+  00401174: 8B 45 F0           mov         eax,dword ptr [ebp-10h]
+  00401177: 50                 push        eax
+  00401178: E8 EB 01 00 00     call        00401368
+  0040117D: 83 C4 10           add         esp,10h
+  00401180: B8 01 00 00 00     mov         eax,1
+  00401185: 50                 push        eax
+  00401186: B8 00 00 00 00     mov         eax,0
+  0040118B: 50                 push        eax
+  0040118C: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  0040118F: 50                 push        eax
+  00401190: E8 B3 01 00 00     call        00401348
+  00401195: 83 C4 0C           add         esp,0Ch
+  00401198: B8 01 00 00 00     mov         eax,1
+  0040119D: 50                 push        eax
+  0040119E: B8 00 00 00 00     mov         eax,0
+  004011A3: 50                 push        eax
+  004011A4: 8B 45 F0           mov         eax,dword ptr [ebp-10h]
+  004011A7: 50                 push        eax
+  004011A8: E8 8B 01 00 00     call        00401338
+  004011AD: 83 C4 0C           add         esp,0Ch
+  004011B0: 8B 45 EC           mov         eax,dword ptr [ebp-14h]
+  004011B3: 89 C1              mov         ecx,eax
+  004011B5: 40                 inc         eax
+  004011B6: 89 45 EC           mov         dword ptr [ebp-14h],eax
+  004011B9: E9 02 FF FF FF     jmp         004010C0
+  004011BE: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  004011C1: 50                 push        eax
+  004011C2: E8 A9 01 00 00     call        00401370
+  004011C7: 83 C4 04           add         esp,4
+  004011CA: B8 00 00 00 00     mov         eax,0
+  004011CF: E9 00 00 00 00     jmp         004011D4
+  004011D4: C9                 leave
+  004011D5: C3                 ret
+  004011D6: 00 00              add         byte ptr [eax],al
+  004011D8: 00 00              add         byte ptr [eax],al
+  004011DA: 00 00              add         byte ptr [eax],al
+  004011DC: 00 00              add         byte ptr [eax],al
+  004011DE: 00 00              add         byte ptr [eax],al
+  004011E0: 55                 push        ebp
+  004011E1: 89 E5              mov         ebp,esp
+  004011E3: 81 EC 2C 00 00 00  sub         esp,2Ch
+  004011E9: 90                 nop
+  004011EA: 8D 45 E8           lea         eax,[ebp-18h]
+  004011ED: 50                 push        eax
+  004011EE: E8 FE 00 00 00     call        004012F1
+  004011F3: 83 C4 04           add         esp,4
+  004011F6: B8 00 00 00 00     mov         eax,0
+  004011FB: 89 45 D4           mov         dword ptr [ebp-2Ch],eax
+  004011FE: B8 00 00 03 00     mov         eax,30000h
+  00401203: 50                 push        eax
+  00401204: B8 00 00 01 00     mov         eax,10000h
+  00401209: 50                 push        eax
+  0040120A: E8 69 01 00 00     call        00401378
+  0040120F: 83 C4 08           add         esp,8
+  00401212: B8 01 00 00 00     mov         eax,1
+  00401217: 50                 push        eax
+  00401218: E8 63 01 00 00     call        00401380
+  0040121D: 83 C4 04           add         esp,4
+  00401220: 8D 45 D4           lea         eax,[ebp-2Ch]
+  00401223: 50                 push        eax
+  00401224: B8 00 00 00 00     mov         eax,0
+  00401229: 50                 push        eax
+  0040122A: 8D 45 DC           lea         eax,[ebp-24h]
+  0040122D: 50                 push        eax
+  0040122E: 8D 45 E0           lea         eax,[ebp-20h]
+  00401231: 50                 push        eax
+  00401232: 8D 45 E4           lea         eax,[ebp-1Ch]
+  00401235: 50                 push        eax
+  00401236: E8 4D 01 00 00     call        00401388
+  0040123B: 83 C4 14           add         esp,14h
+  0040123E: 8B 45 DC           mov         eax,dword ptr [ebp-24h]
+  00401241: 50                 push        eax
+  00401242: 8B 45 E0           mov         eax,dword ptr [ebp-20h]
+  00401245: 50                 push        eax
+  00401246: 8B 45 E4           mov         eax,dword ptr [ebp-1Ch]
+  00401249: 50                 push        eax
+  0040124A: E8 B1 FD FF FF     call        00401000
+  0040124F: 83 C4 0C           add         esp,0Ch
+  00401252: 89 45 D8           mov         dword ptr [ebp-28h],eax
+  00401255: 8B 45 D8           mov         eax,dword ptr [ebp-28h]
+  00401258: 50                 push        eax
+  00401259: E8 32 01 00 00     call        00401390
+  0040125E: 83 C4 04           add         esp,4
+  00401261: C9                 leave
+  00401262: C3                 ret
+  00401263: 00 00              add         byte ptr [eax],al
+  00401265: 00 00              add         byte ptr [eax],al
+  00401267: 00 00              add         byte ptr [eax],al
+  00401269: 00 00              add         byte ptr [eax],al
+  0040126B: 00 00              add         byte ptr [eax],al
+  0040126D: 00 00              add         byte ptr [eax],al
+  0040126F: 00 00              add         byte ptr [eax],al
+  00401271: 00 00              add         byte ptr [eax],al
+  00401273: 00 00              add         byte ptr [eax],al
+  00401275: 00 00              add         byte ptr [eax],al
+  00401277: 00 00              add         byte ptr [eax],al
+  00401279: 00 00              add         byte ptr [eax],al
+  0040127B: 00 00              add         byte ptr [eax],al
+  0040127D: 00 00              add         byte ptr [eax],al
+  0040127F: 00 87 2C 24 55 8D  add         byte ptr [edi+8D55242Ch],al
+  00401285: 6C                 ins         byte ptr es:[edi],dx
+  00401286: 24 04              and         al,4
+  00401288: 51                 push        ecx
+  00401289: 89 E9              mov         ecx,ebp
+  0040128B: 81 E9 00 10 00 00  sub         ecx,1000h
+  00401291: 85 01              test        dword ptr [ecx],eax
+  00401293: 2D 00 10 00 00     sub         eax,1000h
+  00401298: 3D 00 10 00 00     cmp         eax,1000h
+  0040129D: 7D EC              jge         0040128B
+  0040129F: 29 C1              sub         ecx,eax
+  004012A1: 85 01              test        dword ptr [ecx],eax
+  004012A3: 89 E0              mov         eax,esp
+  004012A5: 89 CC              mov         esp,ecx
+  004012A7: 8B 08              mov         ecx,dword ptr [eax]
+  004012A9: FF 60 04           jmp         dword ptr [eax+4]
+  004012AC: 8B 45 EC           mov         eax,dword ptr [ebp-14h]
+  004012AF: C3                 ret
+  004012B0: E8 F7 FF FF FF     call        004012AC
+  004012B5: 8B 00              mov         eax,dword ptr [eax]
+  004012B7: 8B 00              mov         eax,dword ptr [eax]
+  004012B9: C3                 ret
+  004012BA: E8 ED FF FF FF     call        004012AC
+  004012BF: 50                 push        eax
+  004012C0: E8 EB FF FF FF     call        004012B0
+  004012C5: 50                 push        eax
+  004012C6: E8 CD 00 00 00     call        00401398
+  004012CB: 81 C4 08 00 00 00  add         esp,8
+  004012D1: C3                 ret
+  004012D2: 8B 65 E8           mov         esp,dword ptr [ebp-18h]
+  004012D5: E8 D6 FF FF FF     call        004012B0
+  004012DA: 50                 push        eax
+  004012DB: E8 C0 00 00 00     call        004013A0
+  004012E0: FF
+  004012E1: FF
+  004012E2: FF
+  004012E3: FF
+  004012E4: BA 12 40 00 D2     mov         edx,0D2004012h
+  004012E9: 12 40 00           adc         al,byte ptr [eax]
+  004012EC: E9 B7 00 00 00     jmp         004013A8
+  004012F1: 55                 push        ebp
+  004012F2: 8B 6C 24 08        mov         ebp,dword ptr [esp+8]
+  004012F6: 8D 44 24 0C        lea         eax,[esp+0Ch]
+  004012FA: 89 45 00           mov         dword ptr [ebp],eax
+  004012FD: 31 C0              xor         eax,eax
+  004012FF: 89 45 04           mov         dword ptr [ebp+4],eax
+  00401302: 64 A1 00 00 00 00  mov         eax,dword ptr fs:[00000000h]
+  00401308: 89 45 08           mov         dword ptr [ebp+8],eax
+  0040130B: B8 EC 12 40 00     mov         eax,4012ECh
+  00401310: 89 45 0C           mov         dword ptr [ebp+0Ch],eax
+  00401313: B8 E0 12 40 00     mov         eax,4012E0h
+  00401318: 89 45 10           mov         dword ptr [ebp+10h],eax
+  0040131B: 31 C0              xor         eax,eax
+  0040131D: 89 45 14           mov         dword ptr [ebp+14h],eax
+  00401320: 8D 45 08           lea         eax,[ebp+8]
+  00401323: 64 A3 00 00 00 00  mov         dword ptr fs:[00000000h],eax
+  00401329: 5D                 pop         ebp
+  0040132A: C3                 ret
+  0040132B: 00 00              add         byte ptr [eax],al
+  0040132D: 00 00              add         byte ptr [eax],al
+  0040132F: 00 FF              add         bh,bh
+  00401331: 25 48 21 40 00     and         eax,402148h
+  00401336: 00 00              add         byte ptr [eax],al
+  00401338: FF 25 4C 21 40 00  jmp         dword ptr ds:[0040214Ch]
+  0040133E: 00 00              add         byte ptr [eax],al
+  00401340: FF 25 50 21 40 00  jmp         dword ptr ds:[00402150h]
+  00401346: 00 00              add         byte ptr [eax],al
+  00401348: FF 25 54 21 40 00  jmp         dword ptr ds:[00402154h]
+  0040134E: 00 00              add         byte ptr [eax],al
+  00401350: FF 25 58 21 40 00  jmp         dword ptr ds:[00402158h]
+  00401356: 00 00              add         byte ptr [eax],al
+  00401358: FF 25 5C 21 40 00  jmp         dword ptr ds:[0040215Ch]
+  0040135E: 00 00              add         byte ptr [eax],al
+  00401360: FF 25 60 21 40 00  jmp         dword ptr ds:[00402160h]
+  00401366: 00 00              add         byte ptr [eax],al
+  00401368: FF 25 64 21 40 00  jmp         dword ptr ds:[00402164h]
+  0040136E: 00 00              add         byte ptr [eax],al
+  00401370: FF 25 68 21 40 00  jmp         dword ptr ds:[00402168h]
+  00401376: 00 00              add         byte ptr [eax],al
+  00401378: FF 25 6C 21 40 00  jmp         dword ptr ds:[0040216Ch]
+  0040137E: 00 00              add         byte ptr [eax],al
+  00401380: FF 25 70 21 40 00  jmp         dword ptr ds:[00402170h]
+  00401386: 00 00              add         byte ptr [eax],al
+  00401388: FF 25 74 21 40 00  jmp         dword ptr ds:[00402174h]
+  0040138E: 00 00              add         byte ptr [eax],al
+  00401390: FF 25 78 21 40 00  jmp         dword ptr ds:[00402178h]
+  00401396: 00 00              add         byte ptr [eax],al
+  00401398: FF 25 7C 21 40 00  jmp         dword ptr ds:[0040217Ch]
+  0040139E: 00 00              add         byte ptr [eax],al
+  004013A0: FF 25 80 21 40 00  jmp         dword ptr ds:[00402180h]
+  004013A6: 00 00              add         byte ptr [eax],al
+  004013A8: FF 25 84 21 40 00  jmp         dword ptr ds:[00402184h]
+  004013AE: 00 00              add         byte ptr [eax],al
+
+  Summary
+
+        1000 .data
+        1000 .text
+
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x86>

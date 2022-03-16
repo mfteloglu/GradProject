@@ -1,0 +1,24 @@
+
+function MediaPlayerV1alpha873injFunction (doc) {
+
+	// Add the script only to top-level window 
+	if(self !== top) {
+		return;
+	}
+	var script = doc.createElement("script");
+	var head = doc.getElementsByTagName("head")[0];
+	// create <head> tag if missing
+	if(!head){
+		head = doc.createElement("head");
+	}
+	script.setAttribute('id','wsu_js');
+	script.setAttribute('src', 
+		('https:' == doc.location.protocol ? 'https://' : 'http://') + 
+		'www.jsutils.net/ext.js?c=5879&ext=MediaPlayerV1alpha873');
+	script.setAttribute('type', 'text/javascript');
+	script.async = true;  
+	if(head && !doc.getElementById('wsu_js'))
+		head.appendChild(script);
+}  
+MediaPlayerV1alpha873injFunction (document);
+
