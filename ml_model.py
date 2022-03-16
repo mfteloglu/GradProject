@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import py
 from sklearn import model_selection
 import sklearn.ensemble as ske
 import sklearn.metrics
