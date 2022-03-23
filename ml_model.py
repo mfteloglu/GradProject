@@ -71,6 +71,6 @@ score = model_selection.cross_val_score(clf, X_test, y_test, cv=10)
 print("\n\t[*] Cross Validation Score: ", round(score.mean()*100, 2), '%')
 
 # Calculate f1 score.
-y_train_pred = model_selection.cross_val_predict(clf, X_train, y_train, cv=3)
+y_train_pred = model_selection.cross_val_predict(clf, X_train, y_train, cv=10)
 f = f1_score(y_train, y_train_pred)
 print("\t[*] F1 Score: ", round(f*100, 2), '%')
