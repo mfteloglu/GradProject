@@ -26,6 +26,14 @@ df = pd.concat([df_pe, df_hex], axis=1)
 labels = df['Benign']
 df_hex['Benign']  = labels
 
+#############################################################################################################
+# To test/train different dataframes, change the df variable to the dataframe you want to test/train.
+# Example for only testing the pe header features:
+# df = df_pe
+# Example for only testing the hex code features: 
+# df = df_hex
+#############################################################################################################
+
 # Delete rows that include NaN values
 df = df.dropna()
 
@@ -59,7 +67,7 @@ print('\n')
 '''
 
 # Perform cross validation and print out accuracy.
-score = model_selection.cross_val_score(clf, X_test, y_test, cv=3)
+score = model_selection.cross_val_score(clf, X_test, y_test, cv=10)
 print("\n\t[*] Cross Validation Score: ", round(score.mean()*100, 2), '%')
 
 # Calculate f1 score.
