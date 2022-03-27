@@ -10,3 +10,7 @@ Implementation/temp_output.txt
 Implementation/__pycache__/disassembler.cpython-39.pyc
 Implementation/temp_output.txt
 Implementation/functions.txt
+disassembler_opcodes/2022_ransom_samples
+disassembler_opcodes/test_asd
+disassembler_opcodes/test_packed
+2021_ransom_samples_aykut
