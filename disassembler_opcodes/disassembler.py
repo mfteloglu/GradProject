@@ -13,35 +13,15 @@ from pathlib import Path
 import pandas as pd
 import time
 
+sys.path.insert(0, '../pe_header_features')
+
+import pe_header_extract
+
 hexcodes = "00,01,02,03,04,05,06,07,08,09,0A,0B,0C,0D,0E,0F,10,11,12,13,14,15,16,17,18,19,1A,1B,1C,1D,1E,1F,20,21,22,23,24,25,26,27,28,29,2A,2B,2C,2D,2E,2F,30,31,32,33,34,35,36,37,38,39,3A,3B,3C,3D,3E,3F,40,41,42,43,44,45,46,47,48,49,4A,4B,4C,4D,4E,4F,50,51,52,53,54,55,56,57,58,59,5A,5B,5C,5D,5E,5F,60,61,62,63,64,65,66,67,68,69,6A,6B,6C,6D,6E,6F,70,71,72,73,74,75,76,77,78,79,7A,7B,7C,7D,7E,7F,80,81,82,83,84,85,86,87,88,89,8A,8B,8C,8D,8E,8F,90,91,92,93,94,95,96,97,98,99,9A,9B,9C,9D,9E,9F,A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,AA,AB,AC,AD,AE,AF,B0,B1,B2,B3,B4,B5,B6,B7,B8,B9,BA,BB,BC,BD,BE,BF,C0,C1,C2,C3,C4,C5,C6,C7,C8,C9,CA,CB,CC,CD,CE,CF,D0,D1,D2,D3,D4,D5,D6,D7,D8,D9,DA,DB,DC,DD,DE,DF,E0,E1,E2,E3,E4,E5,E6,E7,E8,E9,EA,EB,EC,ED,EE,EF,F0,F1,F2,F3,F4,F5,F6,F7,F8,F9,FA,FB,FC,FD,FE,FF".split(",")
 hexcode_regex = re.compile(r'(:( [0-9A-F][0-9A-F])+)|(           ( [0-9A-F][0-9A-F])+)')
 
 #store intermediate results and files in this file
 helper_folder_name = "disassembler_helper_files/"
-
-def extract_features(file):
-    features = []
-    features.append(os.path.basename(file))
-    pe = pefile.PE(file, fast_load=True)
-    features.append(pe.FILE_HEADER.Machine)
-    features.append(pe.OPTIONAL_HEADER.DATA_DIRECTORY[6].Size)
-    features.append(pe.OPTIONAL_HEADER.DATA_DIRECTORY[6].VirtualAddress)
-    features.append(pe.OPTIONAL_HEADER.MajorImageVersion)
-    features.append(pe.OPTIONAL_HEADER.MajorOperatingSystemVersion)
-    features.append(pe.OPTIONAL_HEADER.DATA_DIRECTORY[0].VirtualAddress)
-    features.append(pe.OPTIONAL_HEADER.DATA_DIRECTORY[0].Size)
-    features.append(pe.OPTIONAL_HEADER.DATA_DIRECTORY[12].VirtualAddress)
-    features.append(pe.OPTIONAL_HEADER.MajorLinkerVersion)
-    features.append(pe.OPTIONAL_HEADER.MinorLinkerVersion)
-    features.append(pe.FILE_HEADER.NumberOfSections)
-    features.append(pe.OPTIONAL_HEADER.SizeOfStackReserve)
-    features.append(pe.OPTIONAL_HEADER.DllCharacteristics)
-    features.append(pe.OPTIONAL_HEADER.DATA_DIRECTORY[2].Size)
-
-    # Calls the check_bitcoinAdress function to check if the file contains a bitcoin address.
-    #bitcoin_check = check_bitcoinAdress(file, yaraRule_path)
-    #features.append(bitcoin_check)
-    return features
 
 #parses the dumpbin program result which is a string
 #and finds the hexcodes
@@ -68,7 +48,8 @@ def unpack_file(target_file_path):
     commands = ".\\upx -d -v {target_file_path}\n".format(target_file_path = target_file_path)
     process = Popen( "cmd.exe", shell=False, universal_newlines=True,
                     stdin=PIPE, stdout=PIPE, stderr=PIPE )                          
-    stdout, stderr = process.communicate(commands)
+    process.communicate(commands)
+    #stdout, stderr = process.communicate(commands)
     #print(stdout)
     #print(stderr)
 
@@ -79,6 +60,7 @@ def disassemble(target_file, dumpbin_path, dumpbin_command, input_folder_name, t
     commands = "c:\ncd {dumpbin_path}\n{dumpbin_command} {target_file_path}\n".format(dumpbin_path = dumpbin_path, dumpbin_command = dumpbin_command, target_file_path = target_file_path)
     process = Popen( "cmd.exe", shell=False, universal_newlines=True,
                     stdin=PIPE, stdout=output_file, stderr=PIPE )                             
+    process.communicate(commands)
     #stdout, stderr = process.communicate(commands)
     #print(stderr)
     output_file.close()
@@ -103,7 +85,7 @@ def disassemble_files(input_folder_name, output_file, dumpbin_path, file_list, t
     for file in tqdm(file_list):
         try:
             filename = os.path.join("..", input_folder_name, file)
-            extract_features(filename) #check if file is PE file
+            #pe_header_extract.extract_features(filename) #check if file is PE file
             is_packed, occurences = disassemble(file, dumpbin_path, dumpbin_command, input_folder_name, temp_output_name)
             if(is_packed):
                 packed_files.append(file)
