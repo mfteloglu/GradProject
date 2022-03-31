@@ -85,7 +85,7 @@ def disassemble_files(input_folder_name, output_file, dumpbin_path, file_list, t
     for file in tqdm(file_list):
         try:
             filename = os.path.join("..", input_folder_name, file)
-            #pe_header_extract.extract_features(filename) #check if file is PE file
+            pe_header_extract.extract_features(filename) #check if file is PE file
             is_packed, occurences = disassemble(file, dumpbin_path, dumpbin_command, input_folder_name, temp_output_name)
             if(is_packed):
                 packed_files.append(file)
