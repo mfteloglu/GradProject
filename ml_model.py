@@ -48,29 +48,35 @@ X = df.drop(['FileName', 'Benign'], axis=1).values
 # Assigns y to label
 y = df['Benign'].values
 
-# Splitting data into training and test data
-X_train, X_test, y_train, y_test = model_selection.train_test_split(X, y, test_size=0.2, random_state=42)
+results = []
+for i in range(5):
+    # Splitting data into training and test data
+    X_train, X_test, y_train, y_test = model_selection.train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Print the number of training and testing samples.
-print("\n\t[*] Training samples: ", len(X_train))
-print("\t[*] Testing samples: ", len(X_test))
+    # Print the number of training and testing samples.
+    print("\n\t[*] Training samples: ", len(X_train))
+    print("\t[*] Testing samples: ", len(X_test))
 
-# Train Random forest algorithm on training dataset.
-clf = ske.RandomForestClassifier(n_estimators=50)
-clf.fit(X_train, y_train)
-''' 
-# predictions
-rfc_predict = clf.predict(X_test)
-print("=== Classification Report ===")
-print(classification_report(y_test, rfc_predict))
-print('\n')
-'''
+    # Train Random forest algorithm on training dataset.
+    clf = ske.RandomForestClassifier(n_estimators=50)
+    clf.fit(X_train, y_train)
+    ''' 
+    # predictions
+    rfc_predict = clf.predict(X_test)
+    print("=== Classification Report ===")
+    print(classification_report(y_test, rfc_predict))
+    print('\n')
+    '''
 
-# Perform cross validation and print out accuracy.
-score = model_selection.cross_val_score(clf, X_test, y_test, cv=10)
-print("\n\t[*] Cross Validation Score: ", round(score.mean()*100, 2), '%')
+    # Perform cross validation and print out accuracy.
+    score = model_selection.cross_val_score(clf, X_test, y_test, cv=10)
+    print("\n\t[*] Cross Validation Score: ", round(score.mean()*100, 2), '%')
 
-# Calculate f1 score.
-y_train_pred = model_selection.cross_val_predict(clf, X_train, y_train, cv=10)
-f = f1_score(y_train, y_train_pred)
-print("\t[*] F1 Score: ", round(f*100, 2), '%')
+    results.append(round(score.mean()*100, 2))
+
+    # Calculate f1 score.
+    y_train_pred = model_selection.cross_val_predict(clf, X_train, y_train, cv=10)
+    f = f1_score(y_train, y_train_pred)
+    print("\t[*] F1 Score: ", round(f*100, 2), '%')
+
+print("Average CV result:", np.mean(results))
