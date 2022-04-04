@@ -19,8 +19,15 @@ df_hex_ransomware = pd.read_csv('disassembler_opcodes/hexcodes_ransomware_percen
 result = pd.concat([df_hex_benign, df_hex_ransomware], axis=0)
 df_hex = result
 
-# Combine pe header and hex code features
-df = pd.concat([df_pe, df_hex], axis=1)
+# Combine benign and ransomware data for DLL import features, create dataframe.
+df_func_benign = pd.read_csv('dll_imports/functions_benign.csv', sep=',')
+df_func_ransom = pd.read_csv('dll_imports/functions_ransom.csv', sep=',')
+result = pd.concat([df_func_benign, df_func_ransom], axis=0)
+df_func = result
+
+
+# Combine all the features
+df = pd.concat([df_pe, df_hex, df_func], axis=1)
 
 # Add labels to hex code features
 labels = df['Benign']
