@@ -3,7 +3,8 @@ import numpy as np
 from sklearn import model_selection
 import sklearn.ensemble as ske
 import sklearn.metrics
-from sklearn.metrics import f1_score, classification_report
+from sklearn.metrics import accuracy_score, f1_score, classification_report
+from sklearn.feature_selection import SelectKBest, chi2
 
 
 # Combine benign and ransomware data for PE header features, create dataframe.
@@ -32,6 +33,7 @@ df = pd.concat([df_pe, df_hex, df_func], axis=1)
 # Add labels to hex code features
 labels = df['Benign']
 df_hex['Benign']  = labels
+df_func['Benign'] = labels
 
 #############################################################################################################
 # To test/train different dataframes, change the df variable to the dataframe you want to test/train.
@@ -39,6 +41,8 @@ df_hex['Benign']  = labels
 # df = df_pe
 # Example for only testing the hex code features: 
 # df = df_hex
+# Example for only testing the DLL import features:
+# df = df_func
 #############################################################################################################
 
 # Delete rows that include NaN values
@@ -51,9 +55,12 @@ print("Training the dataset using Random Forest...")
 # Drops FileName and Label from data.
 X = df.drop(['FileName', 'Benign'], axis=1).values
 
-
 # Assigns y to label
 y = df['Benign'].values
+
+# Feature selection
+X_new = SelectKBest(chi2, k=60).fit_transform(X, y)
+X = X_new
 
 results = []
 for i in range(5):
@@ -67,23 +74,26 @@ for i in range(5):
     # Train Random forest algorithm on training dataset.
     clf = ske.RandomForestClassifier(n_estimators=50)
     clf.fit(X_train, y_train)
-    ''' 
+     
     # predictions
     rfc_predict = clf.predict(X_test)
-    print("=== Classification Report ===")
-    print(classification_report(y_test, rfc_predict))
-    print('\n')
-    '''
+    print("Accuracy : ")
+    print(accuracy_score(y_test, rfc_predict))
+
+    #print("=== Classification Report ===")
+    #print(classification_report(y_test, rfc_predict))
+    #print('\n')
+    
 
     # Perform cross validation and print out accuracy.
     score = model_selection.cross_val_score(clf, X_test, y_test, cv=10)
-    print("\n\t[*] Cross Validation Score: ", round(score.mean()*100, 2), '%')
+    #print("\n\t[*] Cross Validation Score: ", round(score.mean()*100, 2), '%')
 
     results.append(round(score.mean()*100, 2))
 
     # Calculate f1 score.
     y_train_pred = model_selection.cross_val_predict(clf, X_train, y_train, cv=10)
     f = f1_score(y_train, y_train_pred)
-    print("\t[*] F1 Score: ", round(f*100, 2), '%')
+    #print("\t[*] F1 Score: ", round(f*100, 2), '%')
 
-print("Average CV result:", np.mean(results))
+#print("Average CV result:", np.mean(results))

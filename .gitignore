@@ -31,3 +31,7 @@ disassembler_opcodes/disassembler_helper_files/temp_output4.txt
 disassembler_opcodes/disassembler_helper_files/temp_output5.txt
 disassembler_opcodes/disassembler_helper_files/temp_output6.txt
 disassembler_opcodes/disassembler_helper_files/temp_output7.txt
+BenignTestData
+RansomwareTestData
+BenignTestDataold
+RansomwareTestDataold
