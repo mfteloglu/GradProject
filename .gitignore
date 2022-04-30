@@ -31,3 +31,11 @@ disassembler_opcodes/disassembler_helper_files/temp_output4.txt
 disassembler_opcodes/disassembler_helper_files/temp_output5.txt
 disassembler_opcodes/disassembler_helper_files/temp_output6.txt
 disassembler_opcodes/disassembler_helper_files/temp_output7.txt
+DikeDataset-main
+windows_benign_exe_files
+dataset_benign_aykut
+disassembler_opcodes/disassembler_helper_files
+BenignTestData/
+RansomwareTestData/
+RansomwareTestData
+BenignTestData
