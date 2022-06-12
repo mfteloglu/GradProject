@@ -78,8 +78,8 @@ func_limit = int(len(func_sorted) * 0.02)
 ransom_limit = int(len(func_ransom_only_sorted) * 0.04)
 
 
-if (ransom_limit > 64):
-    ransom_limit = 64
+if (ransom_limit > 40):
+    ransom_limit = 40
 
 reduced_func = dict(itertools.islice(func_sorted.items(), func_limit))
 reduced_ransom = dict(itertools.islice(func_ransom_only_sorted.items(), ransom_limit))
@@ -88,7 +88,7 @@ features = ['FileName']
 features.extend(list(reduced_ransom.keys()))
 
 for item in reduced_func:
-    if (item not in features) and (len(features) < 257):
+    if (item not in features) and (len(features) < 81):
         features.append(item)
 
 
@@ -116,7 +116,7 @@ with open('functions_benign.csv', 'w', newline='') as f:
                 else:
                     values.append(0)
         except Exception as ex:
-            values.extend(repeat(0, 256))
+            values.extend(repeat(0, 80))
         writer.writerow(values)
             
 with open('functions_ransom.csv', 'w', newline='') as f:
@@ -140,7 +140,7 @@ with open('functions_ransom.csv', 'w', newline='') as f:
                     values.append(0)
         except Exception as ex:
             if 'has no attribute' in str(ex):
-                values.extend(repeat(0, 256))
+                values.extend(repeat(0, 80))
             else:
                 continue
         writer.writerow(values)

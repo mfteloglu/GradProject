@@ -5,7 +5,6 @@ import sklearn.ensemble as ske
 import sklearn.metrics
 from sklearn.metrics import accuracy_score, f1_score, classification_report
 from sklearn.feature_selection import SelectKBest, chi2
-# from mlens.ensemble import SuperLearner
 import sklearn.svm, sklearn.linear_model
 
 
@@ -76,7 +75,7 @@ df_trimmed.to_csv("without_outliers_before.csv")
 
 ###########################################################
 
-
+'''
 trimmed_filenames = df_trimmed['FileName']
 trimmed_Benign = df_trimmed['Benign']
 
@@ -95,7 +94,7 @@ trimmed_funcpe = pd.concat([trimmed_filenames, trimmed_func, trimmed_pe], axis=1
 trimmed_hex.to_csv('trimmed_hex.csv')
 trimmed_func.to_csv('trimmed_func.csv')
 trimmed_pe.to_csv('trimmed_pe.csv')
-
+'''
 
 ###########################################################
 
@@ -105,7 +104,7 @@ trimmed_pe.to_csv('trimmed_pe.csv')
 #df_trimmed.to_csv("without_outliers.csv")
 
 ############################3
-df_trimmed = trimmed_hexpe
+#df_trimmed = trimmed_hexpe
 ############################
 
 print("Trimmed df shape:", df_trimmed.shape)
@@ -120,10 +119,10 @@ X = df_trimmed.drop(['FileName', 'Benign'], axis=1).values
 #y = df['Benign'].values
 y = df_trimmed['Benign'].values
 # Feature selection
-X_new = SelectKBest(chi2, k=100).fit_transform(X, y)
+X_new = SelectKBest(chi2, k=93).fit_transform(X, y)
 X = X_new
-
-
+#X = X_new.get_support(indices=True)
+np.savetxt('kbested.csv', X, delimiter=',')
 
 results = []
 for i in range(10):
@@ -159,8 +158,9 @@ for i in range(10):
     # Perform cross validation and print out accuracy.
     #score = model_selection.cross_val_score(clf, X_test, y_test, cv=10)
     #print("\n\t[*] Cross Validation Score: ", round(score.mean()*100, 2), '%')
-
-    results.append(accuracy_score(y_test, rfc_predict))
+    ind_result = accuracy_score(y_test, rfc_predict)
+    results.append(ind_result)
+    print(i, ind_result)
 
     # Calculate f1 score.
     #y_train_pred = model_selection.cross_val_predict(clf, X_train, y_train, cv=10)
