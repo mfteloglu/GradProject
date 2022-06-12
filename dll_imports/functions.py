@@ -74,12 +74,12 @@ func_ransom_sorted = dict(sorted(functions_ransom.items(), key=lambda item: item
 func_ransom_only_sorted = dict(sorted(functions_ransom_only.items(), key=lambda item: item[1], reverse=True))
 
 
-func_limit = int(len(func_sorted) * 0.03)
-ransom_limit = int(len(func_ransom_only_sorted) * 0.07)
+func_limit = int(len(func_sorted) * 0.02)
+ransom_limit = int(len(func_ransom_only_sorted) * 0.04)
 
 
-if (ransom_limit > 192):
-    ransom_limit = 192
+if (ransom_limit > 64):
+    ransom_limit = 64
 
 reduced_func = dict(itertools.islice(func_sorted.items(), func_limit))
 reduced_ransom = dict(itertools.islice(func_ransom_only_sorted.items(), ransom_limit))
