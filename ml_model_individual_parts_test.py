@@ -5,7 +5,7 @@ import sklearn.ensemble as ske
 import sklearn.metrics
 from sklearn.metrics import accuracy_score, f1_score, classification_report
 from sklearn.feature_selection import SelectKBest, chi2
-import sklearn.svm, sklearn.linear_model
+import sklearn.svm, sklearn.linear_model, sklearn.tree, sklearn.naive_bayes
 
 
 # Combine benign and ransomware data for PE header features, create dataframe.
@@ -75,13 +75,13 @@ df_trimmed.to_csv("without_outliers_before.csv")
 
 ###########################################################
 
-'''
+
 trimmed_filenames = df_trimmed['FileName']
 trimmed_Benign = df_trimmed['Benign']
 
 trimmed_hex = df_trimmed.iloc[:, 1:257]
-trimmed_func = df_trimmed.iloc[:, 257:513]
-trimmed_pe = df_trimmed.iloc[:, 513:]
+trimmed_func = df_trimmed.iloc[:, 257:337]
+trimmed_pe = df_trimmed.iloc[:, 337:]
 
 trimmed_hex_combined = pd.concat([trimmed_filenames, trimmed_hex, trimmed_Benign], axis=1)
 trimmed_func_combined = pd.concat([trimmed_filenames, trimmed_func, trimmed_Benign], axis=1)
@@ -94,7 +94,7 @@ trimmed_funcpe = pd.concat([trimmed_filenames, trimmed_func, trimmed_pe], axis=1
 trimmed_hex.to_csv('trimmed_hex.csv')
 trimmed_func.to_csv('trimmed_func.csv')
 trimmed_pe.to_csv('trimmed_pe.csv')
-'''
+
 
 ###########################################################
 
@@ -104,7 +104,7 @@ trimmed_pe.to_csv('trimmed_pe.csv')
 #df_trimmed.to_csv("without_outliers.csv")
 
 ############################3
-#df_trimmed = trimmed_hexpe
+#df_trimmed = trimmed_func_combined
 ############################
 
 print("Trimmed df shape:", df_trimmed.shape)
@@ -142,7 +142,7 @@ for i in range(10):
     #print("\t[*] Testing samples: ", len(X_test))
 
     # Train Random forest algorithm on training dataset.
-    clf = ske.RandomForestClassifier(n_estimators=100)
+    clf = ske.RandomForestClassifier(n_estimators=60)
     clf.fit(X_train, y_train)
     
     # predictions
