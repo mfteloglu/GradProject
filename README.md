@@ -1,6 +1,13 @@
-# GradProject
+# Ransomware Detection Using Machine Learning
 
-# To RUN :
+## Graduation project of:
+ Aykut Atmaca https://www.linkedin.com/in/aykut-atmaca-252288147/
+ 
+ Ali Özgür Solak https://www.linkedin.com/in/ali-ozgur-solak/
+ 
+ Mehmet Fatih Teloğlu https://www.linkedin.com/in/mehmet-fatih-telo%C4%9Flu-7920a01b8/
+
+### To RUN :
  first inside disassembler_opcodes file run these two lines : <br>
  "python3 .\disassembler.py BenignTestData hexcodes_benign.csv" <br>
  "python3 .\disassembler.py RansomwareTestData hexcodes_ransomware.csv" <br>
